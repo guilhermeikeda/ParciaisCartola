@@ -1,30 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using ParciaisCartola.ViewModel;
+using ParciaisCartola.Views;
+using ParciaisCartola.Custom;
 
 namespace ParciaisCartola
 {
-    public class App : Application
+    public partial class App : Application
     {
+        private static ViewModelLocator _locator;
+
+        public static ViewModelLocator Locator
+        {
+            get
+            {
+                return _locator;
+            }
+        }
+
         public App()
         {
-            // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            
+            _locator = new ViewModelLocator();
+            MainPage = new CartolaNavigationPage(new Ligas());
         }
 
         protected override void OnStart()
@@ -43,3 +40,4 @@ namespace ParciaisCartola
         }
     }
 }
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Parciais"
+             x:Class="ParciaisCartola.Views.UsuariosLiga">
+  <AbsoluteLayout>
+    <ListView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+              RefreshCommand="{Binding AtualizaPontuacao}"
+              ItemsSource="{Binding ListaTimes}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Image Source="{Binding Escudo}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />
+              <Label Text="{Binding Nome}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+              <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="End"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </AbsoluteLayout>
+</ContentPage>
