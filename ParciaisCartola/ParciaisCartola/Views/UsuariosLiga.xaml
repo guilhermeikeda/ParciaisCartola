@@ -3,18 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Parciais"
              x:Class="ParciaisCartola.Views.UsuariosLiga">
-  <AbsoluteLayout>
+  <AbsoluteLayout BackgroundColor="#F5F5F5">
+    <ActivityIndicator IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
+                         AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize"
+                         HorizontalOptions="Center" />
     <ListView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
               RefreshCommand="{Binding AtualizaPontuacao}"
-              ItemsSource="{Binding ListaTimes}">
+              SeparatorVisibility="None"
+              HasUnevenRows="True"
+              IsPullToRefreshEnabled="true"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              ItemsSource="{Binding ListaTimes, Mode=OneWay}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <StackLayout Orientation="Horizontal">
-              <Image Source="{Binding Escudo}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />
-              <Label Text="{Binding Nome}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
-              <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="End"/>
-            </StackLayout>
+            <Frame HasShadow="false" Padding="0,5,0,5" BackgroundColor="#F5F5F5">
+              <StackLayout Orientation="Vertical" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" Padding="23,25,0,0">
+                  <Label Text="{Binding PosicaoTabela}" FontSize="Medium" HorizontalOptions="Start" VerticalTextAlignment="Center" />
+                  <Label Text="{Binding NomeCartola}" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="{Binding Escudo}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />                  
+                    <Label Text="{Binding Nome}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="End" />
+                </StackLayout>                                              
+              </StackLayout>
+            </Frame>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>

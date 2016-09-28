@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ParciaisCartola.ViewModel
 {
-    public class LigasViewModel : ViewModelBase, IControllerLigas
+    public class LigasViewModel : BaseViewModel, IControllerLigas
     {
         private string _NomeLiga;
         private ObservableCollection<Liga> _LigasList;
@@ -22,12 +22,14 @@ namespace ParciaisCartola.ViewModel
 
         public void BuscarLiga()
         {
+            ShowActivityIndicator = true;
             Task.Run(async () => await cartolaBO.BuscaLiga(NomeLiga));
         }
 
         public void ExibeListaLigas(List<Liga> _Ligas)
         {
             LigasList = new ObservableCollection<Liga>(_Ligas);
+            ShowActivityIndicator = false;
         }
 
         public string NomeLiga

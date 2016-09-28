@@ -55,6 +55,10 @@ namespace ParciaisCartola.Business
                     time.TotalParcialDouble = TotalParcial;
                 }
                 times = times.OrderByDescending(time => time.TotalParcialDouble).ToList();
+                for(var i=0; i < times.Count; i++)
+                {
+                    times[i].PosicaoTabela = (i+1).ToString() + 'º';
+                }
                 controllerUsuariosLiga.ExibeTimesLiga(times);
             }
             catch (Exception e)

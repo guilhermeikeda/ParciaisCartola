@@ -1,5 +1,4 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
+﻿using GalaSoft.MvvmLight.Command;
 using ParciaisCartola.Business;
 using ParciaisCartola.Business.Interfaces;
 using ParciaisCartola.Models;
@@ -9,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace ParciaisCartola.ViewModel
 {
-    public class UsuariosLigaViewModel : ViewModelBase, IControllerUsuariosLiga
+    public class UsuariosLigaViewModel : BaseViewModel, IControllerUsuariosLiga
     {
         private BusinessCartola cartolaBO;
         private ObservableCollection<Time> _ListaTimes;
         private RelayCommand _AtualizaPontuacao;
+        private bool _IsBusy;
 
         public Liga ligaAtual;
 
@@ -24,19 +24,22 @@ namespace ParciaisCartola.ViewModel
 
         internal void TelaOnAppearing()
         {
-            BuscaTimes();
+            ListaTimes = new ObservableCollection<Time>();
+
+            ShowActivityIndicator = true;
+            Task.Run(async () => await BuscaTimes());            
         }
 
-        internal void BuscaTimes()
-        {
-            Task.Run(async () =>
-            {
-                await cartolaBO.BuscaUsuariosLiga(ligaAtual.Slug);
-            });
+        internal async Task BuscaTimes()
+        {                    
+            await cartolaBO.BuscaUsuariosLiga(ligaAtual.Slug);            
         }
+
         public void ExibeTimesLiga(List<Time> times)
         {
             ListaTimes = new ObservableCollection<Time>(times);
+            IsBusy = false;
+            ShowActivityIndicator = false;
         }
 
         public ObservableCollection<Time> ListaTimes
@@ -52,13 +55,27 @@ namespace ParciaisCartola.ViewModel
             }
         }
 
+        public bool IsBusy
+        {
+            get { return _IsBusy; }
+            set
+            {
+                if (_IsBusy != value)
+                {
+                    _IsBusy = value;
+                    RaisePropertyChanged("IsBusy");
+                }
+            }
+        }
+
         public RelayCommand AtualizaPontuacao
         {
             get
             {
                 return _AtualizaPontuacao ?? (_AtualizaPontuacao = new RelayCommand(() =>
                 {
-                    BuscaTimes();
+                    IsBusy = true;
+                    Task.Run(async ()=> await BuscaTimes());                    
                 }));
             }
         }

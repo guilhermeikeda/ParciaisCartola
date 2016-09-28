@@ -54,6 +54,7 @@
     <Compile Include="Services\ICartolaService.cs" />
     <Compile Include="Services\IRequestService.cs" />
     <Compile Include="Services\ServiceRepository.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LigasViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\UsuariosLigaViewModel.cs" />

@@ -8,10 +8,12 @@
       <StackLayout>
         <Entry Placeholder="Busque sua liga" Text="{Binding NomeLiga, Mode=TwoWay}" />
         <Button x:Name="Buscar" Text="Buscar" />
-      </StackLayout>
+      </StackLayout>      
+      <ActivityIndicator IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
+                         HorizontalOptions="Center"/>
       <ListView
            x:Name="ListView"
-           ItemsSource="{Binding LigasList}"           
+           ItemsSource="{Binding LigasList}"                     
            HasUnevenRows="True">
         <ListView.ItemTemplate>
           <DataTemplate>

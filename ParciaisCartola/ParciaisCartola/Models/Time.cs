@@ -24,5 +24,7 @@ namespace ParciaisCartola.Models
         public string TotalParcial { get; set; }
 
         public double TotalParcialDouble { get; set; }
+
+        public string PosicaoTabela { get; set; }
     }
 }
