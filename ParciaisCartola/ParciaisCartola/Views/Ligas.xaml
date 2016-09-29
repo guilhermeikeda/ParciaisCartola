@@ -18,9 +18,9 @@
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
-              <StackLayout Orientation="Horizontal">
+              <StackLayout Orientation="Horizontal" Padding="16,8,8,16" Spacing="16">
                 <Image Source="{Binding Imagem}" WidthRequest="50" HeightRequest="50"/>
-                <Label Text="{Binding Nome}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                <Label Text="{Binding Nome}" VerticalTextAlignment="Center" FontSize="Large"/>
               </StackLayout>
             </ViewCell>
           </DataTemplate>
