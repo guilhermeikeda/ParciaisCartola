@@ -21,7 +21,7 @@ namespace ParciaisCartola
         {
             
             _locator = new ViewModelLocator();
-            MainPage = new CartolaNavigationPage(new Ligas());
+            MainPage = new RootPage();
         }
 
         protected override void OnStart()

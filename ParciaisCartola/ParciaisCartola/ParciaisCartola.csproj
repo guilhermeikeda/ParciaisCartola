@@ -37,7 +37,6 @@
   <ItemGroup>
     <Compile Include="AkavacheSqliteLinkerOverride.cs" />
     <Compile Include="App.cs" />
-    <Compile Include="Business\BusinessCartola.cs" />
     <Compile Include="Business\Interfaces\IControllerLigas.cs" />
     <Compile Include="Business\Interfaces\IControllerUsuariosLiga.cs" />
     <Compile Include="Custom\CartolaNavigationPage.cs" />
@@ -46,6 +45,7 @@
     <Compile Include="Models\Liga.cs" />
     <Compile Include="Models\Requests\RequestGloboLogin.cs" />
     <Compile Include="Models\Response\ResponseLigaTimes.cs" />
+    <Compile Include="Models\Response\ResponsePontuados.cs" />
     <Compile Include="Models\Response\ResponseTime.cs" />
     <Compile Include="Models\Time.cs" />
     <Compile Include="Services\APIService.cs" />
@@ -59,12 +59,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\UsuariosLigaViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="Views\Ligas.xaml.cs">
-      <DependentUpon>Ligas.xaml</DependentUpon>
+    <Compile Include="Views\LigasPage.xaml.cs">
+      <DependentUpon>LigasPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UsuariosLiga.xaml.cs">
-      <DependentUpon>UsuariosLiga.xaml</DependentUpon>
+    <Compile Include="Views\TimesPage.cs">
+      <DependentUpon>TimesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AtletasPage.xaml.cs">
+      <DependentUpon>AtletasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Business\Interfaces\IControllerAtletas.cs" />
+    <Compile Include="ViewModel\AtletasViewModel.cs" />
+    <Compile Include="Views\RootPage.xaml.cs">
+      <DependentUpon>RootPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Business\BusinessCartola.cs" />
+    <Compile Include="Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="Models\ItemMenu.cs" />
+    <Compile Include="Models\MenuType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Akavache, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -141,13 +156,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\UsuariosLiga.xaml">
+    <EmbeddedResource Include="Views\TimesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AtletasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RootPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Ligas.xaml">
+    <EmbeddedResource Include="Views\LigasPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

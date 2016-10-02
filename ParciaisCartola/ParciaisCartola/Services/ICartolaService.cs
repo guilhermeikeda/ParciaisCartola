@@ -1,4 +1,5 @@
 ﻿using ParciaisCartola.Models;
+using ParciaisCartola.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,6 @@ namespace ParciaisCartola.Services
 
         Task<List<Atleta>> GetAtletasTime(string slugTime);
 
+        Task<ResponsePontuados> GetAtletasPontuados();
     }
 }

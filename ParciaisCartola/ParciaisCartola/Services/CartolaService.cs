@@ -62,5 +62,17 @@ namespace ParciaisCartola.Services
                 throw e;
             }
         }
+
+        public async Task<ResponsePontuados> GetAtletasPontuados()
+        {
+            try
+            {
+                var response = await apiService.RequestService.GetAtletasPontuados() as ResponsePontuados;
+                return response;
+            }catch(Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ParciaisCartola.Models
 {
@@ -17,6 +18,8 @@ namespace ParciaisCartola.Models
 
         [JsonProperty(PropertyName = "url_escudo_png")]
         public string Escudo { get; set; }
+
+        public UriImageSource EscudoURI { get; set; }
 
         [JsonProperty(PropertyName = "nome_cartola")]
         public string NomeCartola { get; set; }

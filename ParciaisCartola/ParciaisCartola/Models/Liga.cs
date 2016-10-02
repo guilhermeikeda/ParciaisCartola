@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ParciaisCartola.Models
 {
@@ -23,5 +24,7 @@ namespace ParciaisCartola.Models
 
         [JsonProperty(PropertyName = "imagem")]
         public string Imagem { get; set; }
+
+        public UriImageSource  ImagemURI { get; set; }
     }
 }

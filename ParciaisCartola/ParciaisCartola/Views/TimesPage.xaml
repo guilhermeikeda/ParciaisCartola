@@ -2,18 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Parciais"
-             x:Class="ParciaisCartola.Views.UsuariosLiga">
+             x:Class="ParciaisCartola.Views.TimesPage">
   <AbsoluteLayout BackgroundColor="#F5F5F5">
     <ActivityIndicator IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
                          AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize"
                          HorizontalOptions="Center" />
-    <ListView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
-              RefreshCommand="{Binding AtualizaPontuacao}"
-              SeparatorVisibility="None"
-              HasUnevenRows="True"
-              IsPullToRefreshEnabled="true"
-              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-              ItemsSource="{Binding ListaTimes, Mode=OneWay}">
+    <ListView 
+			x:Name="ListView"
+			AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+			RefreshCommand="{Binding AtualizaPontuacao}"
+			SeparatorVisibility="None"
+			HasUnevenRows="True"
+			IsPullToRefreshEnabled="true"
+			IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+			ItemsSource="{Binding ListaTimes, Mode=OneWay}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -24,7 +26,7 @@
                   <Label Text="{Binding NomeCartola}" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="{Binding Escudo}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />                  
+                    <Image Source="{Binding EscudoURI}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />                  
                     <Label Text="{Binding Nome}" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="CenterAndExpand" />
                     <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="End" />
                 </StackLayout>                                              

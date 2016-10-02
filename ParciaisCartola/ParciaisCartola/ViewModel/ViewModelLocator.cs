@@ -15,7 +15,25 @@ namespace ParciaisCartola.ViewModel
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<LigasViewModel>();
             SimpleIoc.Default.Register<UsuariosLigaViewModel>();
+			SimpleIoc.Default.Register<AtletasViewModel>();
+			SimpleIoc.Default.Register<MenuViewModel>();
         }
+
+		public MenuViewModel Menu
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<MenuViewModel>();
+			}
+		}
+
+		public AtletasViewModel Atletas
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<AtletasViewModel>();
+			}
+		}
 
         public LigasViewModel Ligas
         {

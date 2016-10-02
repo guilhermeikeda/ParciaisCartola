@@ -25,5 +25,8 @@ namespace ParciaisCartola.Services
         [Get("/time/{slugTime}")]
         Task<ResponseTime> GetAtletasTime(string slugTime);
 
+        [Get("/atletas/pontuados")]
+        Task<ResponsePontuados> GetAtletasPontuados();        
+
     }
 }

@@ -10,21 +10,23 @@ using Xamarin.Forms;
 
 namespace ParciaisCartola.Views
 {
-    public partial class Ligas : ContentPage
+    public partial class LigasPage : ContentPage
     {
-        public Ligas()
+        public LigasPage()
         {
             InitializeComponent();
             BindingContext = App.Locator.Ligas;
             Buscar.Clicked += Buscar_Clicked;
-            ListView.ItemTapped += ListView_ItemTapped;
+            ListView.ItemTapped += async (object sender, ItemTappedEventArgs e) => {
+                Liga ligaSelecionada = (Liga)e.Item;
+                App.Locator.UsuariosLiga.ligaAtual = ligaSelecionada;
+                await App.Locator.Menu.PushPage(MenuType.LIGAS, new TimesPage());
+            };
         }
 
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async Task ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Liga ligaSelecionada = (Liga)e.Item;
-            App.Locator.UsuariosLiga.ligaAtual = ligaSelecionada;
-            ((CartolaNavigationPage)App.Current.MainPage).PushAsync(new UsuariosLiga());
+           
         }
 
         private void Buscar_Clicked(object sender, EventArgs e)
