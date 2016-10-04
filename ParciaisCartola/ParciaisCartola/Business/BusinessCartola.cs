@@ -75,12 +75,6 @@ namespace ParciaisCartola.Business
 					double TotalParcial = 0.0;
 					foreach (Atleta atleta in atletas)
 					{
-                        atleta.FotoURI = new UriImageSource()
-                        {
-                            Uri = new Uri(atleta.Foto),
-                            CachingEnabled = true
-
-                        }
                         if(atletasPontuados.atletas.ContainsKey(atleta.ID))
                             TotalParcial += atletasPontuados.atletas[atleta.ID].pontuacao;
                     }
@@ -107,7 +101,21 @@ namespace ParciaisCartola.Business
 			try
 			{
 				List<Atleta> atletas = await ServiceRepository.CartolaService.GetAtletasTime(slugTime);
-				controllerAtletas.ExibeListaAtletas(atletas);
+                ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();
+                foreach(var atleta in atletas)
+                {
+                    if (atletasPontuados.atletas.ContainsKey(atleta.ID))
+                        atleta.PontosParcial = atletasPontuados.atletas[atleta.ID].pontuacao.ToString();
+                    else
+                        atleta.PontosParcial = "0,00";
+
+                    atleta.FotoURI = new UriImageSource()
+                    {
+                        Uri = new Uri(atleta.Foto.Replace("FORMATO", "50x50")),
+                        CachingEnabled = true
+                    };
+                }
+                controllerAtletas.ExibeListaAtletas(atletas);
 			}
 			catch (Exception e)
 			{

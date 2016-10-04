@@ -16,6 +16,8 @@ namespace ParciaisCartola.Models
         [JsonProperty(PropertyName = "pontos_num")]
         public double Pontos { get; set; }
 
+        public string PontosParcial { get; set; }
+
         [JsonProperty(PropertyName = "foto")]
         public string Foto { get; set; }
 

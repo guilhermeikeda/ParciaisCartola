@@ -10,6 +10,7 @@
 				AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize"/>
 			<ListView
 				AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+        HasUnevenRows="True"
 				ItemsSource="{Binding AtletasList}">
 				<ListView.ItemTemplate>
 					<DataTemplate>
@@ -24,9 +25,9 @@
 									<ColumnDefinition Width="*"/>
 								</Grid.ColumnDefinitions>
 
-								<Image Source="{Binding Foto}"  Grid.Row="0" Grid.Column="0" HeightRequest="50" WidthRequest="50"/>
+								<Image Source="{Binding FotoURI}"  Grid.Row="0" Grid.Column="0" HeightRequest="50" WidthRequest="50"/>
 								<Label Text="{Binding Apelido}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
-								<Label Text="{Binding Pontos}" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center"/>
+								<Label Text="{Binding PontosParcial}" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center"/>
 							</Grid>
 						</ViewCell>
 					</DataTemplate>
