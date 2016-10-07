@@ -56,11 +56,11 @@ namespace ParciaisCartola.Business
 			}
 		}
 
-		public async Task BuscaUsuariosLiga(string slugLiga)
+		public async Task BuscaTimesLiga(string slugLiga)
 		{
 			try
 			{
-				List<Time> times = await ServiceRepository.CartolaService.GetUsuariosLiga(slugLiga);
+				List<Time> times = await ServiceRepository.CartolaService.GetTimes(slugLiga);
                 ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();
 
                 foreach (Time time in times)
@@ -72,6 +72,7 @@ namespace ParciaisCartola.Business
                         CachingEnabled = true,
 
                     };
+
 					double TotalParcial = 0.0;
 					foreach (Atleta atleta in atletas)
 					{
@@ -80,6 +81,7 @@ namespace ParciaisCartola.Business
                     }
 					time.TotalParcial = string.Format("{0:0.00}", TotalParcial);
 					time.TotalParcialDouble = TotalParcial;
+					await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, time);
 				}
 
 				times = times.OrderByDescending(time => time.TotalParcialDouble).ToList();
@@ -100,6 +102,9 @@ namespace ParciaisCartola.Business
 		{
 			try
 			{
+				Time time = await ServiceRepository.CartolaService.GetTimeCache(slugTime);
+				controllerAtletas.ExibeTime(time);
+
 				List<Atleta> atletas = await ServiceRepository.CartolaService.GetAtletasTime(slugTime);
                 ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();
                 foreach(var atleta in atletas)

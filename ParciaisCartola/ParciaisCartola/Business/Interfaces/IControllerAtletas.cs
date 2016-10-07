@@ -6,5 +6,7 @@ namespace ParciaisCartola
 	public interface IControllerAtletas
 	{
 		void ExibeListaAtletas(List<Atleta> atletas);
+
+		void ExibeTime(Time time);
 	}
 }

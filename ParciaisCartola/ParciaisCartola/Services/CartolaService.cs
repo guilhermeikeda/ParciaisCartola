@@ -4,6 +4,8 @@ using ParciaisCartola.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Reactive.Linq;
+using Akavache;
 
 namespace ParciaisCartola.Services
 {
@@ -37,7 +39,7 @@ namespace ParciaisCartola.Services
             }
         }
 
-        public async Task<List<Time>> GetUsuariosLiga(string slugLiga)
+        public async Task<List<Time>> GetTimes(string slugLiga)
         {
             try
             {                
@@ -49,6 +51,32 @@ namespace ParciaisCartola.Services
                 throw e;
             }
         }
+
+		public async Task InsertTimeCache(string slugTime, Time time)
+		{
+			try
+			{
+				await BlobCache.LocalMachine.InsertObject<Time>(slugTime, time);
+			}
+			catch (Exception e)
+			{
+				System.Diagnostics.Debug.WriteLine(e);
+				throw e;
+			}
+		}
+		public async Task<Time> GetTimeCache(string slugTime)
+		{
+			try
+			{
+				Time time = await BlobCache.LocalMachine.GetObject<Time>(slugTime);
+				return time;
+			}
+			catch (Exception e)
+			{
+				System.Diagnostics.Debug.WriteLine(e);
+				throw e;
+			}
+		}
 
         public async Task<List<Atleta>> GetAtletasTime(string slugTime)
         {

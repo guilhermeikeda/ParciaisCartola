@@ -15,7 +15,7 @@ namespace ParciaisCartola.Views
         public TimesPage()
         {
             InitializeComponent();
-            BindingContext = App.Locator.UsuariosLiga;
+            BindingContext = App.Locator.Times;
             ListView.ItemTapped += async (object sender, ItemTappedEventArgs e) =>
             {
                 Time timeSelecionado = (Time)e.Item;
@@ -28,7 +28,7 @@ namespace ParciaisCartola.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            App.Locator.UsuariosLiga.TelaOnAppearing();
+            App.Locator.Times.TelaOnAppearing();
         }
     }
 }

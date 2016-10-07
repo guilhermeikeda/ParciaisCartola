@@ -14,10 +14,14 @@ namespace ParciaisCartola.Services
 
         Task<GloboLogin> AutenticaUsuarioGlobo(string email, string password);
 
-        Task<List<Time>> GetUsuariosLiga(string slugLiga);
+        Task<List<Time>> GetTimes(string slugLiga);
 
         Task<List<Atleta>> GetAtletasTime(string slugTime);
 
         Task<ResponsePontuados> GetAtletasPontuados();
+
+		Task<Time> GetTimeCache(string slugLiga);
+
+		Task InsertTimeCache(string slugTime, Time time);
     }
 }

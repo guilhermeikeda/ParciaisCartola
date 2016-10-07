@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ParciaisCartola.ViewModel
 {
-    public class UsuariosLigaViewModel : BaseViewModel, IControllerUsuariosLiga
+    public class TimesViewModel : BaseViewModel, IControllerUsuariosLiga
     {
         private BusinessCartola cartolaBO;
         private ObservableCollection<Time> _ListaTimes;
@@ -17,7 +17,7 @@ namespace ParciaisCartola.ViewModel
 
         public Liga ligaAtual;
 
-        public UsuariosLigaViewModel()
+        public TimesViewModel()
         {
             cartolaBO = new BusinessCartola(this);
         }
@@ -32,7 +32,7 @@ namespace ParciaisCartola.ViewModel
 
         internal async Task BuscaTimes()
         {                    
-            await cartolaBO.BuscaUsuariosLiga(ligaAtual.Slug);            
+            await cartolaBO.BuscaTimesLiga(ligaAtual.Slug);            
         }
 
         public void ExibeTimesLiga(List<Time> times)

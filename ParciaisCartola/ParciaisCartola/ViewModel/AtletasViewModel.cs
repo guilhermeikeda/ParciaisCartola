@@ -12,6 +12,8 @@ namespace ParciaisCartola
 	{
 		private BusinessCartola cartolaBO;
 		private ObservableCollection<Atleta> _AtletasList;
+		private Time _Time;
+
 		public string SlugTimeSelecionado { get; set; }
 		public string NomeTimeSelecionado { get; set; }
 
@@ -37,6 +39,27 @@ namespace ParciaisCartola
 		public async Task BuscaAtleta()
 		{
 			await cartolaBO.BuscaAtletasTime(SlugTimeSelecionado);
+		}
+
+		public void ExibeTime(Time time)
+		{
+			Time = time;
+		}
+
+		public Time Time
+		{
+			get
+			{
+				return _Time;
+			}
+			set
+			{
+				if (_Time != value)
+				{
+					_Time = value;
+					RaisePropertyChanged("Time");
+				}
+			}
 		}
 
 		public ObservableCollection<Atleta> AtletasList

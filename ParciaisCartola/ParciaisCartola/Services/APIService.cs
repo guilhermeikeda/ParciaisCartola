@@ -2,6 +2,7 @@
 using Refit;
 using System;
 using System.Net.Http;
+using Akavache;
 
 namespace ParciaisCartola.Services
 {
@@ -17,6 +18,7 @@ namespace ParciaisCartola.Services
 
         public APIService()
         {
+			BlobCache.ApplicationName = "ParciaisCartola";
             Func<HttpMessageHandler, IRequestService> createClient = (messageHandler) =>
             {
                 var client = new HttpClient(messageHandler)

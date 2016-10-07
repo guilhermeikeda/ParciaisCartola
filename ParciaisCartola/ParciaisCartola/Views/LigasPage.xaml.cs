@@ -19,7 +19,7 @@ namespace ParciaisCartola.Views
             Buscar.Clicked += Buscar_Clicked;
             ListView.ItemTapped += async (object sender, ItemTappedEventArgs e) => {
                 Liga ligaSelecionada = (Liga)e.Item;
-                App.Locator.UsuariosLiga.ligaAtual = ligaSelecionada;
+                App.Locator.Times.ligaAtual = ligaSelecionada;
                 await App.Locator.Menu.PushPage(MenuType.LIGAS, new TimesPage());
             };
         }
