@@ -25,5 +25,8 @@ namespace ParciaisCartola.Models
 
         [JsonProperty(PropertyName = "atleta_id")]
         public int ID { get; set; }
+
+        [JsonProperty(PropertyName = "posicao_id")]
+        public int PosicaoID { get; set; }
     }
 }

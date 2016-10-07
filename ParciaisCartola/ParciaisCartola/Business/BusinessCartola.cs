@@ -115,6 +115,8 @@ namespace ParciaisCartola.Business
                         CachingEnabled = true
                     };
                 }
+
+                atletas = atletas.OrderBy(atleta => atleta.PosicaoID).ToList();
                 controllerAtletas.ExibeListaAtletas(atletas);
 			}
 			catch (Exception e)
