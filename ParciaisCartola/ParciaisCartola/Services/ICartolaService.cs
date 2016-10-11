@@ -23,5 +23,9 @@ namespace ParciaisCartola.Services
 		Task<Time> GetTimeCache(string slugLiga);
 
 		Task InsertTimeCache(string slugTime, Time time);
+
+        Task<ResponsePontuados> GetAtletasPontuadosCache();
+
+        Task UpdateAtletasPontuados(ResponsePontuados atletasPontuados);
     }
 }

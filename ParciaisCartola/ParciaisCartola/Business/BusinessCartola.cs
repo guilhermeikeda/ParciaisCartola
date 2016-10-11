@@ -102,19 +102,16 @@ namespace ParciaisCartola.Business
         {
             try
             {
-                ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();
+                ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();                
                 return atletasPontuados;
             }
             catch (ApiException e)
             {
                 System.Diagnostics.Debug.WriteLine(e);
+
                 if (e.StatusCode.Equals(HttpStatusCode.NotFound))
                 {
-                    ResponsePontuados res = new ResponsePontuados()
-                    {
-                        atletas = new Dictionary<int, ResponsePontuados.AtletasPontuados>()
-                    };
-                    return res;
+                    return await ServiceRepository.CartolaService.GetAtletasPontuadosCache();
                 }
                 throw e;
             }
