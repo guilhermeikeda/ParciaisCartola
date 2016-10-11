@@ -34,8 +34,7 @@ namespace ParciaisCartola.Business
 		public async Task BuscaLiga(string nomeLiga)
 		{
 			try
-			{
-                ResponsePontuados res = await ServiceRepository.CartolaService.GetAtletasPontuados();
+			{                
 				List<Liga> ligas = await ServiceRepository.CartolaService.GetLigas(nomeLiga);
                 foreach(var liga in ligas)
                 {

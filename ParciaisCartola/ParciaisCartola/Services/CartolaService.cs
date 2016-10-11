@@ -20,9 +20,17 @@ namespace ParciaisCartola.Services
 
         public async Task<List<Liga>> GetLigas(string nomeLiga)
         {
-            var response = await apiService.RequestService.GetLigasByName(nomeLiga) as List<Liga>;
-            Liga liga = response[0];
-            return response;
+			try
+			{
+
+				var response = await apiService.RequestService.GetLigasByName(nomeLiga) as List<Liga>;
+				Liga liga = response[0];
+				return response;
+			}
+			catch (Exception e)
+			{
+				throw e;
+			}
         }
 
         public async Task<GloboLogin> AutenticaUsuarioGlobo(string email, string password)
