@@ -10,7 +10,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace ParciaisCartola.Droid
 {
-    [Activity(Theme ="@style/ParciaisCartolaTheme", Label = "ParciaisCartola", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Theme ="@style/ParciaisCartolaTheme", Label = "ParciaisCartola", Icon = "@drawable/ic_launcher", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

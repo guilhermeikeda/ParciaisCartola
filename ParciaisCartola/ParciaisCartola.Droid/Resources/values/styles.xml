@@ -12,6 +12,7 @@
   </style>
 
   <style name="ParciaisCartolaTheme.Splash" parent ="ParciaisCartolaTheme.Base">
+	<item name="android:windowBackground">@drawable/splash_screen</item>
     <item name="android:windowNoTitle">true</item>
   </style>
 
