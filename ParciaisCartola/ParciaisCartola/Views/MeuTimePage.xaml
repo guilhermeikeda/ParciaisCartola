@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParciaisCartola.Views.MeuTimePage">
+  <RelativeLayout>
+    <BoxView Color="Aqua" x:Name="Aqua"
+             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}"
+             RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+             RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}" />
+
+    <BoxView Color="Red" x:Name="Red"
+          RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}"
+         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToView, Property=Width, Factor=1, ElementName=Aqua}"
+         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.9, ElementName=Aqua}" />
+  </RelativeLayout>
+</ContentPage>

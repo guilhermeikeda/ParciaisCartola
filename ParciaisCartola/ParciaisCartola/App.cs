@@ -2,7 +2,9 @@
 using ParciaisCartola.ViewModel;
 using ParciaisCartola.Views;
 using ParciaisCartola.Custom;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ParciaisCartola
 {
     public partial class App : Application
