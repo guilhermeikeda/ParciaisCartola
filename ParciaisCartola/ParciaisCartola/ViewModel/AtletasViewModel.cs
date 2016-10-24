@@ -23,12 +23,6 @@ namespace ParciaisCartola
 			AtletasList = new ObservableCollection<Atleta>();
 		}
 
-		public void ExibeListaAtletas(List<Atleta> atletas)
-		{
-			AtletasList = new ObservableCollection<Atleta>(atletas);
-			ShowActivityIndicator = false;
-		}
-
 		public void TelaOnAppearing()
 		{
 			ShowActivityIndicator = true;
@@ -46,7 +40,13 @@ namespace ParciaisCartola
 			Time = time;
 		}
 
-		public Time Time
+        public void ExibeListaAtletas(List<Atleta> atletas)
+        {
+            AtletasList = new ObservableCollection<Atleta>(atletas);
+            ShowActivityIndicator = false;
+        }
+
+        public Time Time
 		{
 			get
 			{
@@ -57,6 +57,7 @@ namespace ParciaisCartola
 				if (_Time != value)
 				{
 					_Time = value;
+                    _Time.TotalParcial = _Time.TotalParcial + " pts.";
 					RaisePropertyChanged("Time");
 				}
 			}

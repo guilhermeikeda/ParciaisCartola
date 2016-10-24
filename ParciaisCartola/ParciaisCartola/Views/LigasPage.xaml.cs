@@ -24,11 +24,6 @@ namespace ParciaisCartola.Views
             };
         }
 
-        private async Task ListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-           
-        }
-
         private void Buscar_Clicked(object sender, EventArgs e)
         {
             App.Locator.Ligas.BuscarLiga();

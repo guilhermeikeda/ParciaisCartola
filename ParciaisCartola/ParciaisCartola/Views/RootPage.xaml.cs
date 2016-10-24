@@ -12,6 +12,7 @@ namespace ParciaisCartola
 			InitializeComponent();
             Detail = App.Locator.Menu.GetCurrentPage(MenuType.LIGAS);
             Master = new MenuPage();
+            IsPresented = false;
 		}
 	}
 }

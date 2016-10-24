@@ -1,38 +1,75 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 		x:Class="ParciaisCartola.AtletasPage"
 		Title="{Binding NomeTimeSelecionado}">
-	<ContentPage.Content>
-		<AbsoluteLayout>
-			<ActivityIndicator 
-				IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
-				AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize"/>
-			<ListView
-				AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
-        HasUnevenRows="True"
-				ItemsSource="{Binding AtletasList}">
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-							<Grid>
-								<Grid.RowDefinitions>
-									<RowDefinition Height="*"/>
-								</Grid.RowDefinitions>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="50"/>									
-									<ColumnDefinition Width="*" />
-									<ColumnDefinition Width="*"/>
-								</Grid.ColumnDefinitions>
+  <ContentPage.Content>
+    <RelativeLayout>
+      <!--  INFORMAÇÕES DO TIME -->
+      <StackLayout
+        BackgroundColor="#616161"
+        Spacing="10"
+        Padding="0,10,0,20"
+         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.27}"
+         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}">
+        <Image Source="{Binding Time.Escudo}" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" />
+        <Label Text="{Binding Time.TotalParcial}" FontSize="30" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" />
+      </StackLayout>
 
-								<Image Source="{Binding FotoURI}"  Grid.Row="0" Grid.Column="0" HeightRequest="50" WidthRequest="50"/>
-								<Label Text="{Binding Apelido}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
-								<Label Text="{Binding PontosParcial}" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center"/>
-							</Grid>
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>
-		</AbsoluteLayout>
-	</ContentPage.Content>
+      <AbsoluteLayout
+        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.73}"
+         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.27}">
+
+        <ActivityIndicator
+          IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
+          AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize" />
+
+        <!-- LISTA DE JOGADORES -->
+        <ListView
+          AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+          HasUnevenRows="True"
+          ItemsSource="{Binding AtletasList}">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <Grid>
+                  <Grid.RowDefinitions Padding="10,0,0,10">
+                    <RowDefinition Height="*"/>
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+                  
+                  <controls:CircleImage Source="{Binding FotoURI}" Aspect="AspectFill">
+                    <controls:CircleImage.WidthRequest>
+                      <OnPlatform x:TypeArguments="x:Double"
+                        iOS="50"
+                        Android="50"
+                        WinPhone="75" />
+                    </controls:CircleImage.WidthRequest>
+                    <controls:CircleImage.HeightRequest>
+                      <OnPlatform x:TypeArguments="x:Double"
+                        iOS="55"
+                        Android="50"
+                        WinPhone="75" />
+                    </controls:CircleImage.HeightRequest>
+                  </controls:CircleImage>
+                  
+                  <Label Text="{Binding Apelido}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" />
+                  <Label Text="{Binding PontosParcial}" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                </Grid>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </AbsoluteLayout>
+    </RelativeLayout>
+  </ContentPage.Content>
 </ContentPage>

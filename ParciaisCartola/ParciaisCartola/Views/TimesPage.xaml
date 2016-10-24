@@ -22,7 +22,8 @@
             <Frame HasShadow="false" Padding="0,5,0,5" BackgroundColor="#F5F5F5">
               <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="20" Padding="25,25,10,25">
                 <Label Text="{Binding PosicaoTabela}" FontSize="Medium" VerticalTextAlignment="Center" HorizontalOptions="Fill" LineBreakMode="NoWrap" />
-                <Image Source="{Binding EscudoURI}" WidthRequest="50" HeightRequest="50" />
+                <Image Source="{Binding EscudoURI}" Aspect="AspectFit"
+                       WidthRequest="40" HeightRequest="40" />
                 <StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
                   <Label Text="{Binding Nome}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Medium" LineBreakMode="WordWrap" />
                   <Label Text="{Binding NomeCartola}" HorizontalOptions="Start" />

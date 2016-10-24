@@ -17,9 +17,9 @@ namespace ParciaisCartola
             {
                 if (e == null) return;
                 MenuType itemMenu = ((ItemMenu)e.Item).Tipo;
-                
+                             
+                ((RootPage)App.Current.MainPage).Detail = App.Locator.Menu.GetCurrentPage(itemMenu);
                 ((RootPage)App.Current.MainPage).IsPresented = false;
-                ((RootPage)App.Current.MainPage).Detail = App.Locator.Menu.GetCurrentPage(itemMenu);                
             }
         }
     }
