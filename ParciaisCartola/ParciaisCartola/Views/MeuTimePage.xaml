@@ -10,9 +10,9 @@
              RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}" />
 
     <BoxView Color="Red" x:Name="Red"
-          RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
          RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}"
-         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToView, Property=Width, Factor=1, ElementName=Aqua}"
-         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.9, ElementName=Aqua}" />
+         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToView, Property=Width, Factor=0, ElementName=Aqua}"
+         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToView, Property=Height, Factor=1, ElementName=Aqua}" />
   </RelativeLayout>
 </ContentPage>

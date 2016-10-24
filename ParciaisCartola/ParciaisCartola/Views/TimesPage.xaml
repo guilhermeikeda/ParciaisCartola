@@ -7,7 +7,7 @@
     <ActivityIndicator IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
                          AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize, AutoSize"
                          HorizontalOptions="Center" />
-    <ListView 
+    <ListView
 			x:Name="ListView"
 			AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
 			RefreshCommand="{Binding AtualizaPontuacao}"
@@ -21,13 +21,13 @@
           <ViewCell>
             <Frame HasShadow="false" Padding="0,5,0,5" BackgroundColor="#F5F5F5">
               <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="20" Padding="25,25,10,25">
-					<Label Text="{Binding PosicaoTabela}" FontSize="Medium" VerticalTextAlignment="Center" HorizontalOptions="Fill" />
-					<Image Source="{Binding EscudoURI}" WidthRequest="50" HeightRequest="50" />                  
-					<StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
-						<Label Text="{Binding Nome}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Medium" />
-						<Label Text="{Binding NomeCartola}" HorizontalOptions="Start"/>
-					</StackLayout>
-					<Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="Fill"/>
+                <Label Text="{Binding PosicaoTabela}" FontSize="Medium" VerticalTextAlignment="Center" HorizontalOptions="Fill" LineBreakMode="NoWrap" />
+                <Image Source="{Binding EscudoURI}" WidthRequest="50" HeightRequest="50" />
+                <StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
+                  <Label Text="{Binding Nome}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Medium" LineBreakMode="WordWrap" />
+                  <Label Text="{Binding NomeCartola}" HorizontalOptions="Start" />
+                </StackLayout>
+                <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="Fill" LineBreakMode="NoWrap"/>
               </StackLayout>
             </Frame>
           </ViewCell>
