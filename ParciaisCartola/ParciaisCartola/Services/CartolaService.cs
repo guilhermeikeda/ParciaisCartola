@@ -2,6 +2,7 @@
 using ParciaisCartola.Models;
 using ParciaisCartola.Models.Requests;
 using ParciaisCartola.Models.Response;
+using Refit;
 using System;
 using System.Collections.Generic;
 using System.Reactive.Linq;
@@ -12,8 +13,9 @@ namespace ParciaisCartola.Services
     public class CartolaService : ICartolaService
     {
         private IAPIService apiService;
-        private const string GLOBO_ID = "1ba23e7940331e6bf2c724675da67eda9443337416c35674d58576c527542415a656e65365072596c5a597a346d6a39596c5a7564334f35453871694244654e5845707a443674454a4733437a376954683a303a6763695f6a61706f6e65697340686f746d61696c2e636f6d";
+        private string GLOBO_ID = "1ba23e7940331e6bf2c724675da67eda9443337416c35674d58576c527542415a656e65365072596c5a597a346d6a39596c5a7564334f35453871694244654e5845707a443674454a4733437a376954683a303a6763695f6a61706f6e65697340686f746d61696c2e636f6d";
         private const string BD_ATLETASPONTUADOS = "BD_ATLETASPONTUADOS";
+        private const string BD_TOKENGLOBO = "BD_TOKENGLOBO";
 
         public CartolaService(IAPIService _apiService)
         {
@@ -40,6 +42,7 @@ namespace ParciaisCartola.Services
             {
                 RequestGloboLogin req = new RequestGloboLogin(email, password);
                 var response = await apiService.RequestServiceGlobo.AutenticaUsuarioGlobo(req) as GloboLogin;
+                await UpdateTokenGlobo(response.Token);
                 return response;
             }
             catch (Exception e)
@@ -48,12 +51,41 @@ namespace ParciaisCartola.Services
             }
         }
 
+        private async Task UpdateTokenGlobo(string token)
+        {
+            try
+            {
+                await BlobCache.LocalMachine.InsertObject<string>(BD_TOKENGLOBO, token);
+                GLOBO_ID = token;
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+        }
+
+        private async Task<string> GetTokenGlobo()
+        {
+            try
+            {
+                return await BlobCache.LocalMachine.GetObject<string>(BD_TOKENGLOBO);
+            }catch(Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+                return "";
+            }
+        }
         public async Task<List<Time>> GetTimes(string slugLiga)
         {
             try
             {
-                var response = await apiService.RequestService.GetUsuariosLiga(slugLiga, GLOBO_ID) as ResponseLigaTimes;
+                var token = await GetTokenGlobo();
+                var response = await apiService.RequestService.GetTimesLiga(slugLiga, token) as ResponseLigaTimes;
                 return response.times;
+            }
+            catch (ApiException a)
+            {
+                throw a;
             }
             catch (Exception e)
             {

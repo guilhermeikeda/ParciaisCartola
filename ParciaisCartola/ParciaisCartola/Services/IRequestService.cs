@@ -20,7 +20,7 @@ namespace ParciaisCartola.Services
         Task<GloboLogin> AutenticaUsuarioGlobo([Body] RequestGloboLogin nomeLiga);
 
         [Get("/auth/liga/{nomeLiga}")]
-        Task<ResponseLigaTimes> GetUsuariosLiga(string nomeLiga, [Header("X-GLB-Token")] string globoId);
+        Task<ResponseLigaTimes> GetTimesLiga(string nomeLiga, [Header("X-GLB-Token")] string globoId);
 
         [Get("/time/{slugTime}")]
         Task<ResponseTime> GetAtletasTime(string slugTime);

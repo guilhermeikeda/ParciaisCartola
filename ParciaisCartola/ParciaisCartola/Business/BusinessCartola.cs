@@ -92,28 +92,17 @@ namespace ParciaisCartola.Business
                 }
                 controllerUsuariosLiga.ExibeTimesLiga(times);
             }
+            catch (ApiException a)
+            {
+                if (a.StatusCode.Equals(HttpStatusCode.Unauthorized))
+                {
+                    await AutenticaAdmin();
+                    BuscaTimesLiga(slugLiga);
+                }
+            }
             catch (Exception e)
             {
                 System.Diagnostics.Debug.WriteLine(e);
-            }
-        }
-
-        private async Task<ResponsePontuados> GetAtletasPontuados()
-        {
-            try
-            {
-                ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();                
-                return atletasPontuados;
-            }
-            catch (ApiException e)
-            {
-                System.Diagnostics.Debug.WriteLine(e);
-
-                if (e.StatusCode.Equals(HttpStatusCode.NotFound))
-                {
-                    return await ServiceRepository.CartolaService.GetAtletasPontuadosCache();
-                }
-                throw e;
             }
         }
 
@@ -148,6 +137,34 @@ namespace ParciaisCartola.Business
             {
                 System.Diagnostics.Debug.WriteLine(e);
             }
+        }
+
+        private async Task<ResponsePontuados> GetAtletasPontuados()
+        {
+            try
+            {
+                ResponsePontuados atletasPontuados = await ServiceRepository.CartolaService.GetAtletasPontuados();
+                return atletasPontuados;
+            }
+            catch (ApiException e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+
+                if (e.StatusCode.Equals(HttpStatusCode.NotFound))
+                {
+                    return await ServiceRepository.CartolaService.GetAtletasPontuadosCache();
+                }
+                throw e;
+            }
+        }
+
+        /// <summary>
+        /// Ao realizar alguma busca na API da Globo, caso ela retorne StatusCode = Unauthorized, devemos
+        /// realizar o login e passar o token para as demais chamadas
+        /// </summary>
+        private async Task AutenticaAdmin()
+        {
+            await ServiceRepository.CartolaService.AutenticaUsuarioGlobo("gci_japoneis@hotmail.com", "345288ikeda");
         }
     }
 }

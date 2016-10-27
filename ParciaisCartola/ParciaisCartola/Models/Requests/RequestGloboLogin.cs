@@ -2,11 +2,13 @@
 {
     public class RequestGloboLogin
     {
+        public Payload payload { get; set; }
+        public string captcha = "";
+
         public RequestGloboLogin(string email, string password)
         {
             this.payload = new Payload() { email = email, password = password, serviceId = 438 };
         }
-        public Payload payload { get; set; }
 
         public class Payload
         {

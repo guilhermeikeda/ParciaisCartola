@@ -10,6 +10,6 @@ namespace ParciaisCartola.Models
     public class GloboLogin
     {
         [JsonProperty(PropertyName = "glbId")]
-        public string Id { get; set; }
+        public string Token { get; set; }
     }
 }
