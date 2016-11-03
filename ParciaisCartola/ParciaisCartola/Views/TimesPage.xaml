@@ -24,11 +24,14 @@
                 <Label Text="{Binding PosicaoTabela}" FontSize="Medium" VerticalTextAlignment="Center" HorizontalOptions="Fill" LineBreakMode="NoWrap" />
                 <Image Source="{Binding EscudoURI}" Aspect="AspectFit"
                        WidthRequest="40" HeightRequest="40" />
-                <StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand">
                   <Label Text="{Binding Nome}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Medium" LineBreakMode="WordWrap" />
                   <Label Text="{Binding NomeCartola}" HorizontalOptions="Start" />
                 </StackLayout>
-                <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="Fill" LineBreakMode="NoWrap"/>
+				<StackLayout Orientation="Vertical" VerticalOptions="End" HorizontalOptions="End">
+            	    <Label Text="{Binding TotalParcial}" VerticalTextAlignment="Center" FontSize="Medium" HorizontalOptions="Fill" LineBreakMode="NoWrap"/>
+					<Label Text="{Binding NumeroAtletasPontuados}" VerticalTextAlignment="Center" FontSize="Small" HorizontalOptions="Fill" LineBreakMode="NoWrap"/>
+				</StackLayout>
               </StackLayout>
             </Frame>
           </ViewCell>

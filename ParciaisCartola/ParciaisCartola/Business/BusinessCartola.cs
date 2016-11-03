@@ -65,22 +65,28 @@ namespace ParciaisCartola.Business
                 foreach (Time time in times)
                 {
                     List<Atleta> atletas = await ServiceRepository.CartolaService.GetAtletasTime(time.Slug);
+					double TotalParcial = 0.0;
+					int NumeroAtletasPontuados = 0;
+
                     time.EscudoURI = new UriImageSource()
                     {
                         Uri = new Uri(time.Escudo),
                         CachingEnabled = true,
                     };
 
-                    double TotalParcial = 0.0;
-
                     foreach (Atleta atleta in atletas)
                     {
-                        if (atletasPontuados.atletas.ContainsKey(atleta.ID))
-                            TotalParcial += atletasPontuados.atletas[atleta.ID].pontuacao;
+						if (atletasPontuados.atletas.ContainsKey(atleta.ID))
+						{
+							TotalParcial += atletasPontuados.atletas[atleta.ID].pontuacao;
+							NumeroAtletasPontuados += 1;
+						}
                     }
 
                     time.TotalParcial = string.Format("{0:0.00}", TotalParcial);
                     time.TotalParcialDouble = TotalParcial;
+					time.NumeroAtletasPontuados = NumeroAtletasPontuados + "/12";
+
                     await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, time);
                 }
 

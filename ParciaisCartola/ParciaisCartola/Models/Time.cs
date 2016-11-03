@@ -29,5 +29,7 @@ namespace ParciaisCartola.Models
         public double TotalParcialDouble { get; set; }
 
         public string PosicaoTabela { get; set; }
+
+		public string NumeroAtletasPontuados { get; set; }
     }
 }
