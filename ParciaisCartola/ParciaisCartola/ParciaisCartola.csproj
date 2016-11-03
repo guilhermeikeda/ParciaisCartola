@@ -83,6 +83,7 @@
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="Models\ItemMenu.cs" />
     <Compile Include="Models\MenuType.cs" />
+    <Compile Include="Models\LigaPageCache.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Akavache, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">

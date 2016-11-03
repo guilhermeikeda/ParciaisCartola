@@ -28,5 +28,11 @@ namespace ParciaisCartola.Views
         {
             App.Locator.Ligas.BuscarLiga();
         }
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			App.Locator.Ligas.TelaOnAppearing();
+		}
     }
 }

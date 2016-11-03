@@ -16,6 +16,7 @@ namespace ParciaisCartola.Services
         private string GLOBO_ID = "1ba23e7940331e6bf2c724675da67eda9443337416c35674d58576c527542415a656e65365072596c5a597a346d6a39596c5a7564334f35453871694244654e5845707a443674454a4733437a376954683a303a6763695f6a61706f6e65697340686f746d61696c2e636f6d";
         private const string BD_ATLETASPONTUADOS = "BD_ATLETASPONTUADOS";
         private const string BD_TOKENGLOBO = "BD_TOKENGLOBO";
+		private const string BD_LIGASPAGE = "BD_LIGASPAGE";
 
         public CartolaService(IAPIService _apiService)
         {
@@ -110,8 +111,7 @@ namespace ParciaisCartola.Services
         {
             try
             {
-                Time time = await BlobCache.LocalMachine.GetObject<Time>(slugTime);
-                return time;
+                return await BlobCache.LocalMachine.GetObject<Time>(slugTime);                 
             }
             catch (Exception e)
             {
@@ -173,5 +173,36 @@ namespace ParciaisCartola.Services
                 };
             }
         }
+
+		public async Task<LigaPageCache> GetLigaPageCache()
+		{
+			try
+			{
+				return await BlobCache.LocalMachine.GetObject<LigaPageCache>(BD_LIGASPAGE);
+			}
+			catch (Exception e)
+			{
+				System.Diagnostics.Debug.WriteLine(e);
+				throw e;
+			}
+		}
+
+		public async Task UpdateLigaPageCache(string nomeLiga, List<Liga> ligas)
+		{
+			try
+			{
+				LigaPageCache _ligaPageCache = new LigaPageCache()
+				{
+					NomeLiga = nomeLiga,
+					Ligas = ligas
+				};
+				await BlobCache.LocalMachine.InsertObject<LigaPageCache>(BD_LIGASPAGE, _ligaPageCache);
+			}
+			catch (Exception e)
+			{
+				System.Diagnostics.Debug.WriteLine(e);
+				throw e;
+			}
+		}
     }
 }

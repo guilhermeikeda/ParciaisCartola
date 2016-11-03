@@ -27,5 +27,10 @@ namespace ParciaisCartola.Services
         Task<ResponsePontuados> GetAtletasPontuadosCache();
 
         Task UpdateAtletasPontuados(ResponsePontuados atletasPontuados);
+
+		Task<LigaPageCache> GetLigaPageCache();
+
+		Task UpdateLigaPageCache(string nomeLiga, List<Liga> ligas);
+
     }
 }

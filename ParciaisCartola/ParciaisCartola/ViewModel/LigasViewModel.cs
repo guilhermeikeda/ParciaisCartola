@@ -5,6 +5,8 @@ using ParciaisCartola.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using System;
+using Xamarin.Forms;
 
 namespace ParciaisCartola.ViewModel
 {
@@ -17,13 +19,16 @@ namespace ParciaisCartola.ViewModel
         public LigasViewModel()
         {
             cartolaBO = new BusinessCartola(this);
-            NomeLiga = "Opus Software";
+			LigasList = new ObservableCollection<Liga>();
         }
 
         public void BuscarLiga()
         {
-            ShowActivityIndicator = true;
-            Task.Run(async () => await cartolaBO.BuscaLiga(NomeLiga));
+			if (!string.IsNullOrEmpty(NomeLiga))
+			{
+				ShowActivityIndicator = true;
+				Task.Run(async () => await cartolaBO.BuscaLiga(NomeLiga));
+			}
         }
 
         public void ExibeListaLigas(List<Liga> _Ligas)
@@ -32,7 +37,21 @@ namespace ParciaisCartola.ViewModel
             ShowActivityIndicator = false;
         }
 
-        public string NomeLiga
+		public void ExibeLigaPageCache(LigaPageCache _LigaPageCache)
+		{
+			Device.BeginInvokeOnMainThread(() =>
+			{ 
+				LigasList = new ObservableCollection<Liga>(_LigaPageCache.Ligas);
+			});
+		}
+
+		internal void  TelaOnAppearing()
+		{
+			if(LigasList.Count == 0)
+				Task.Run(async() => await cartolaBO.BuscaLigaCache());
+		}
+
+		public string NomeLiga
         {
             get
             {

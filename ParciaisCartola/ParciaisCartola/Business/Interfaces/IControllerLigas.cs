@@ -10,5 +10,7 @@ namespace ParciaisCartola.Business.Interfaces
     public interface IControllerLigas
     {
         void ExibeListaLigas(List<Liga> Ligas);
+
+		void ExibeLigaPageCache(LigaPageCache LigaPageCache);
     }
 }

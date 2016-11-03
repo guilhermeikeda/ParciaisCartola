@@ -47,6 +47,7 @@ namespace ParciaisCartola.Business
                         CacheValidity = new TimeSpan(5, 0, 0)
                     };
                 }
+				await ServiceRepository.CartolaService.UpdateLigaPageCache(nomeLiga, ligas);
                 controllerLigas.ExibeListaLigas(ligas);
             }
             catch (Exception e)
@@ -163,6 +164,22 @@ namespace ParciaisCartola.Business
                 throw e;
             }
         }
+
+		public async Task BuscaLigaCache()
+		{
+			try
+			{
+				LigaPageCache _ligaPageCache = await ServiceRepository.CartolaService.GetLigaPageCache();
+				if (_ligaPageCache != null)
+				{
+					controllerLigas.ExibeLigaPageCache(_ligaPageCache);
+				}
+			}
+			catch (Exception e)
+			{
+				System.Diagnostics.Debug.WriteLine(e);
+			}
+		}
 
         /// <summary>
         /// Ao realizar alguma busca na API da Globo, caso ela retorne StatusCode = Unauthorized, devemos
