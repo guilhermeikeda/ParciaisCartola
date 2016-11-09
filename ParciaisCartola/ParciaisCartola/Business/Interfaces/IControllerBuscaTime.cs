@@ -10,5 +10,7 @@ namespace ParciaisCartola.Business.Interfaces
     public interface IControllerBuscaTime
     {
         void ExibeListaTimes(List<Time> times);
+
+        void ExibeErro();
     }
 }

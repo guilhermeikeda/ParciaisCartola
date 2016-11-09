@@ -28,5 +28,11 @@ namespace ParciaisCartola.Views
         {
             App.Locator.BuscaTime.BuscarTime();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            App.Locator.BuscaTime.TelaOnAppearing();
+        }
     }
 }

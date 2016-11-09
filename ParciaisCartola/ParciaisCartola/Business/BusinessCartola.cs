@@ -55,25 +55,30 @@ namespace ParciaisCartola.Business
                 {
                     Time t = await ServiceRepository.CartolaService.GetPerfilTime(time.Slug);
 
-                    time.EscudoURI = new UriImageSource()
+                    if (t != null)
                     {
-                        Uri = new Uri(t.Escudo),
-                        CachingEnabled = true,
-                    };
+                        time.EscudoURI = new UriImageSource()
+                        {
+                            Uri = new Uri(t.Escudo),
+                            CachingEnabled = true,
+                        };
 
-                    time.FotoPerfilURI = new UriImageSource()
-                    {
-                        Uri = new Uri(t.FotoPerfil),
-                        CachingEnabled = true,
-                        CacheValidity = TimeSpan.FromDays(3)
-                    };
-                    await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, t);
+                        time.FotoPerfilURI = new UriImageSource()
+                        {
+                            Uri = new Uri(t.FotoPerfil),
+                            CachingEnabled = true,
+                            CacheValidity = TimeSpan.FromDays(3)
+                        };
+                        await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, t);
+                    }
                 }
 
+                await ServiceRepository.CartolaService.UpdateTimesPageCache(times);
                 controllerBuscaTime.ExibeListaTimes(times);
             }
             catch (Exception e)
             {
+                controllerBuscaTime.ExibeErro();
                 System.Diagnostics.Debug.WriteLine(e);
             }
         }
@@ -97,6 +102,7 @@ namespace ParciaisCartola.Business
             }
             catch (Exception e)
             {
+                controllerLigas.ExibeErro();
                 System.Diagnostics.Debug.WriteLine(e);
             }
         }
@@ -232,6 +238,22 @@ namespace ParciaisCartola.Business
                 if (_ligaPageCache != null)
                 {
                     controllerLigas.ExibeLigaPageCache(_ligaPageCache);
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+        }
+
+        public async Task BuscaTimesPageCache()
+        {
+            try
+            {
+                List<Time> times = await ServiceRepository.CartolaService.GetTimesPageCache();
+                if (times != null)
+                {
+                    controllerBuscaTime.ExibeListaTimes(times);
                 }
             }
             catch (Exception e)

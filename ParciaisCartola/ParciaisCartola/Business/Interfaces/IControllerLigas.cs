@@ -12,5 +12,7 @@ namespace ParciaisCartola.Business.Interfaces
         void ExibeListaLigas(List<Liga> Ligas);
 
 		void ExibeLigaPageCache(LigaPageCache LigaPageCache);
+
+        void ExibeErro();
     }
 }

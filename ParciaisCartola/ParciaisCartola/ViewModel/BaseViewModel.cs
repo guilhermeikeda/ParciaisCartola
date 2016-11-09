@@ -16,5 +16,10 @@ namespace ParciaisCartola.ViewModel
                 RaisePropertyChanged("ShowActivityIndicator");
             }
         }
+
+        public void ExibeErro()
+        {
+            ShowActivityIndicator = false;
+        }
     }
 }

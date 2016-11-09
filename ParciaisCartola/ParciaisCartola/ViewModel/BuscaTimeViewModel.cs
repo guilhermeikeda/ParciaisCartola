@@ -4,6 +4,7 @@ using ParciaisCartola.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ParciaisCartola.ViewModel
 {
@@ -18,13 +19,15 @@ namespace ParciaisCartola.ViewModel
         {
             TimesList = new ObservableCollection<Time>();
             cartolaBO = new BusinessCartola(this);
-			NomeTime = "Ikeda F.C";
         }
 
         public void ExibeListaTimes(List<Time> times)
         {
-            TimesList = new ObservableCollection<Time>(times);
-            ShowActivityIndicator = false;
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                TimesList = new ObservableCollection<Time>(times);
+                ShowActivityIndicator = false;
+            });
         }
 
         internal void BuscarTime()
@@ -33,6 +36,14 @@ namespace ParciaisCartola.ViewModel
             {
                 ShowActivityIndicator = true;
                 Task.Run(async () => await cartolaBO.BuscaTimes(NomeTime));
+            }
+        }
+
+        internal void TelaOnAppearing()
+        {
+            if (TimesList.Count == 0)
+            {
+                Task.Run(async () => await cartolaBO.BuscaTimesPageCache());
             }
         }
 

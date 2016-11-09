@@ -35,5 +35,9 @@ namespace ParciaisCartola.Services
 		Task UpdateLigaPageCache(string nomeLiga, List<Liga> ligas);
 
 		Task<Time> GetPerfilTime(string slugTime);
-	}
+
+        Task<List<Time>> GetTimesPageCache();
+
+        Task UpdateTimesPageCache(List<Time> _times);
+    }
 }
