@@ -22,11 +22,21 @@ namespace ParciaisCartola.Services
         [Get("/auth/liga/{nomeLiga}")]
         Task<ResponseLigaTimes> GetTimesLiga(string nomeLiga, [Header("X-GLB-Token")] string globoId);
 
-        [Get("/time/{slugTime}")]
-        Task<ResponseTime> GetAtletasTime(string slugTime);
+   
 
         [Get("/atletas/pontuados")]
-        Task<ResponsePontuados> GetAtletasPontuados();        
+        Task<ResponsePontuados> GetAtletasPontuados();
+
+
+        #region TIMES
+
+        [Get("/times?q={nomeTime}")]
+        Task<List<Time>> GetTimes(string nomeTime);
+
+        [Get("/time/{slugTime}")]
+        Task<ResponseTime> GetAtletasTime(string slugTime);
+        #endregion
+
 
     }
 }

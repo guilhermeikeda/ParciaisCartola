@@ -23,13 +23,23 @@ namespace ParciaisCartola.Services
             apiService = _apiService;
         }
 
+        public async Task<List<Time>> GetTimes(string nomeTime)
+        {
+            try
+            {
+                return await apiService.RequestService.GetTimes(nomeTime) as List<Time>;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         public async Task<List<Liga>> GetLigas(string nomeLiga)
         {
             try
             {
-                var response = await apiService.RequestService.GetLigasByName(nomeLiga) as List<Liga>;
-                Liga liga = response[0];
-                return response;
+                return await apiService.RequestService.GetLigasByName(nomeLiga) as List<Liga>; ;
             }
             catch (Exception e)
             {
@@ -76,7 +86,7 @@ namespace ParciaisCartola.Services
                 return "";
             }
         }
-        public async Task<List<Time>> GetTimes(string slugLiga)
+        public async Task<List<Time>> GetTimesLiga(string slugLiga)
         {
             try
             {
@@ -98,7 +108,7 @@ namespace ParciaisCartola.Services
         {
             try
             {
-                await BlobCache.LocalMachine.InsertObject<Time>(slugTime, time);
+				await BlobCache.LocalMachine.InsertObject<Time>(slugTime, time, TimeSpan.FromDays(3));
             }
             catch (Exception e)
             {
@@ -132,6 +142,19 @@ namespace ParciaisCartola.Services
                 throw e;
             }
         }
+
+		public async Task<Time> GetPerfilTime(string slugTime)
+		{
+			try
+			{
+				var response = await apiService.RequestService.GetAtletasTime(slugTime) as ResponseTime;
+				return response.time;
+			}
+			catch (Exception e)
+			{
+				throw e;
+			}
+		}
 
         public async Task<ResponsePontuados> GetAtletasPontuados()
         {

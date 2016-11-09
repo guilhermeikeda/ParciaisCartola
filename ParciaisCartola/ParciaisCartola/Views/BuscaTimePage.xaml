@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             Title="Times"
+             x:Class="ParciaisCartola.Views.BuscaTimePage">
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout>
+        <Entry Placeholder="Busque seu time" Text="{Binding NomeTime, Mode=TwoWay}" />
+        <Button x:Name="Buscar" Text="Buscar" />
+      </StackLayout>
+      <ActivityIndicator IsRunning="{Binding ShowActivityIndicator}" IsVisible="{Binding ShowActivityIndicator}"
+                         HorizontalOptions="Center" />
+      <ListView
+           x:Name="ListView"
+           ItemsSource="{Binding TimesList}"
+           SeparatorVisibility="None"
+           HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Frame HasShadow="false" Padding="0,5,0,5" BackgroundColor="#F5F5F5">
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="20" Padding="25,25,10,25">
+
+                  <!-- FOTO ESCUDO -->
+                  <Image Source="{Binding EscudoURI}" Aspect="AspectFit"
+                         WidthRequest="40" HeightRequest="40" />
+
+                  <!-- FOTO PERFIL -->
+                  <controls:CircleImage Source="{Binding FotoPerfilURI}" Aspect="AspectFill" 
+                                        WidthRequest="50" HeightRequest="50"/>                                    
+
+                  <!-- DADOS CARTOLA -->
+                  <StackLayout Orientation="Vertical" VerticalOptions="Center"  HorizontalOptions="StartAndExpand">
+
+                    <Label Text="{Binding Nome}"  FontSize="Medium" LineBreakMode="WordWrap"
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+
+                    <Label Text="{Binding NomeCartola}" HorizontalOptions="Start" />
+                  </StackLayout>
+                </StackLayout>
+              </Frame>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

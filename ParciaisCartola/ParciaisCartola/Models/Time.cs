@@ -23,7 +23,12 @@ namespace ParciaisCartola.Models
 
         [JsonProperty(PropertyName = "nome_cartola")]
         public string NomeCartola { get; set; }
-      
+
+		[JsonProperty(PropertyName = "foto_perfil")]
+		public string FotoPerfil { get; set; }
+
+        public UriImageSource FotoPerfilURI { get; set; }
+
         public string TotalParcial { get; set; }
 
         public double TotalParcialDouble { get; set; }

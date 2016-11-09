@@ -17,6 +17,7 @@ namespace ParciaisCartola.ViewModel
             SimpleIoc.Default.Register<TimesViewModel>();
 			SimpleIoc.Default.Register<AtletasViewModel>();
 			SimpleIoc.Default.Register<MenuViewModel>();
+            SimpleIoc.Default.Register<BuscaTimeViewModel>();
         }
 
 		public MenuViewModel Menu
@@ -48,6 +49,14 @@ namespace ParciaisCartola.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<TimesViewModel>();
+            }
+        }
+
+        public BuscaTimeViewModel BuscaTime
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<BuscaTimeViewModel>();
             }
         }
     }

@@ -10,11 +10,13 @@ namespace ParciaisCartola.Services
 {
     public interface ICartolaService
     {
+        Task<List<Time>> GetTimes(string nomeTime);
+
         Task<List<Liga>> GetLigas(string nomeLiga);
 
         Task<GloboLogin> AutenticaUsuarioGlobo(string email, string password);
 
-        Task<List<Time>> GetTimes(string slugLiga);
+        Task<List<Time>> GetTimesLiga(string slugLiga);
 
         Task<List<Atleta>> GetAtletasTime(string slugTime);
 
@@ -32,5 +34,6 @@ namespace ParciaisCartola.Services
 
 		Task UpdateLigaPageCache(string nomeLiga, List<Liga> ligas);
 
-    }
+		Task<Time> GetPerfilTime(string slugTime);
+	}
 }

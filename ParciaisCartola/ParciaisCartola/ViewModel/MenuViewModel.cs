@@ -35,7 +35,8 @@ namespace ParciaisCartola
                         Pages.Add(menuType, new CartolaNavigationPage(new LigasPage()));
                         break;
                     case MenuType.TIMES:
-                        Pages.Add(menuType, new CartolaNavigationPage(new MeuTimePage()));
+                        // Pages.Add(menuType, new CartolaNavigationPage(new MeuTimePage()));
+                        Pages.Add(menuType, new CartolaNavigationPage(new BuscaTimePage()));
                         break;
                 }
                 

@@ -16,7 +16,7 @@
          RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
          RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}">
         <Image Source="{Binding Time.Escudo}" HeightRequest="70" WidthRequest="70" HorizontalOptions="Center" />
-        <Label Text="{Binding Time.TotalParcial}" FontSize="30" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" />
+        <Label Text="{Binding TotalParcial}" FontSize="30" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" />
       </StackLayout>
 
       <AbsoluteLayout

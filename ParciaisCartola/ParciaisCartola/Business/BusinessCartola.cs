@@ -17,6 +17,7 @@ namespace ParciaisCartola.Business
         private IControllerLigas controllerLigas;
         private IControllerUsuariosLiga controllerUsuariosLiga;
         private IControllerAtletas controllerAtletas;
+        private IControllerBuscaTime controllerBuscaTime;
 
         public BusinessCartola(IControllerLigas _controllerLigas)
         {
@@ -33,6 +34,50 @@ namespace ParciaisCartola.Business
             controllerAtletas = _controllerAtletas;
         }
 
+        public BusinessCartola(IControllerBuscaTime _controllerBuscaTime)
+        {
+            controllerBuscaTime = _controllerBuscaTime;
+        }
+
+        /// <summary>
+        /// Busca times pelo nome do time.
+        ///
+        /// </summary>
+        /// <param name="nomeTime"></param>
+        /// <returns></returns>
+        public async Task BuscaTimes(string nomeTime)
+        {
+            try
+            {
+                List<Time> times = await ServiceRepository.CartolaService.GetTimes(nomeTime);
+
+                foreach (Time time in times)
+                {
+                    Time t = await ServiceRepository.CartolaService.GetPerfilTime(time.Slug);
+
+                    time.EscudoURI = new UriImageSource()
+                    {
+                        Uri = new Uri(t.Escudo),
+                        CachingEnabled = true,
+                    };
+
+                    time.FotoPerfilURI = new UriImageSource()
+                    {
+                        Uri = new Uri(t.FotoPerfil),
+                        CachingEnabled = true,
+                        CacheValidity = TimeSpan.FromDays(3)
+                    };
+                    await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, t);
+                }
+
+                controllerBuscaTime.ExibeListaTimes(times);
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+        }
+
         public async Task BuscaLiga(string nomeLiga)
         {
             try
@@ -47,7 +92,7 @@ namespace ParciaisCartola.Business
                         CacheValidity = new TimeSpan(5, 0, 0)
                     };
                 }
-				await ServiceRepository.CartolaService.UpdateLigaPageCache(nomeLiga, ligas);
+                await ServiceRepository.CartolaService.UpdateLigaPageCache(nomeLiga, ligas);
                 controllerLigas.ExibeListaLigas(ligas);
             }
             catch (Exception e)
@@ -60,14 +105,14 @@ namespace ParciaisCartola.Business
         {
             try
             {
-                List<Time> times = await ServiceRepository.CartolaService.GetTimes(slugLiga);
+                List<Time> times = await ServiceRepository.CartolaService.GetTimesLiga(slugLiga);
                 ResponsePontuados atletasPontuados = await GetAtletasPontuados();
 
                 foreach (Time time in times)
                 {
                     List<Atleta> atletas = await ServiceRepository.CartolaService.GetAtletasTime(time.Slug);
-					double TotalParcial = 0.0;
-					int NumeroAtletasPontuados = 0;
+                    double TotalParcial = 0.0;
+                    int NumeroAtletasPontuados = 0;
 
                     time.EscudoURI = new UriImageSource()
                     {
@@ -77,16 +122,16 @@ namespace ParciaisCartola.Business
 
                     foreach (Atleta atleta in atletas)
                     {
-						if (atletasPontuados.atletas.ContainsKey(atleta.ID))
-						{
-							TotalParcial += atletasPontuados.atletas[atleta.ID].pontuacao;
-							NumeroAtletasPontuados += 1;
-						}
+                        if (atletasPontuados.atletas.ContainsKey(atleta.ID))
+                        {
+                            TotalParcial += atletasPontuados.atletas[atleta.ID].pontuacao;
+                            NumeroAtletasPontuados += 1;
+                        }
                     }
 
                     time.TotalParcial = string.Format("{0:0.00}", TotalParcial);
                     time.TotalParcialDouble = TotalParcial;
-					time.NumeroAtletasPontuados = NumeroAtletasPontuados + "/12";
+                    time.NumeroAtletasPontuados = NumeroAtletasPontuados + "/12";
 
                     await ServiceRepository.CartolaService.InsertTimeCache(time.Slug, time);
                 }
@@ -115,18 +160,32 @@ namespace ParciaisCartola.Business
 
         public async Task BuscaAtletasTime(string slugTime)
         {
+            Time time = new Time();
+            double pontuacaoParcial = 0;
+
             try
             {
-                Time time = await ServiceRepository.CartolaService.GetTimeCache(slugTime);
+                time = await ServiceRepository.CartolaService.GetTimeCache(slugTime);
                 controllerAtletas.ExibeTime(time);
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
 
+            try
+            {
                 List<Atleta> atletas = await ServiceRepository.CartolaService.GetAtletasTime(slugTime);
                 ResponsePontuados atletasPontuados = await GetAtletasPontuados();
 
                 foreach (var atleta in atletas)
                 {
                     if (atletasPontuados.atletas.ContainsKey(atleta.ID))
-                        atleta.PontosParcial = atletasPontuados.atletas[atleta.ID].pontuacao.ToString();
+                    {
+                        var pontuacao = atletasPontuados.atletas[atleta.ID].pontuacao;
+                        atleta.PontosParcial = string.Format("{0:0.00}", pontuacao);
+                        pontuacaoParcial += pontuacaoParcial;
+                    }
                     else
                         atleta.PontosParcial = "0,00";
 
@@ -138,7 +197,7 @@ namespace ParciaisCartola.Business
                 }
 
                 atletas = atletas.OrderBy(atleta => atleta.PosicaoID).ToList();
-                controllerAtletas.ExibeListaAtletas(atletas);
+                controllerAtletas.ExibeListaAtletas(atletas, string.Format("{0:0.00}", pontuacaoParcial));
             }
             catch (Exception e)
             {
@@ -165,21 +224,21 @@ namespace ParciaisCartola.Business
             }
         }
 
-		public async Task BuscaLigaCache()
-		{
-			try
-			{
-				LigaPageCache _ligaPageCache = await ServiceRepository.CartolaService.GetLigaPageCache();
-				if (_ligaPageCache != null)
-				{
-					controllerLigas.ExibeLigaPageCache(_ligaPageCache);
-				}
-			}
-			catch (Exception e)
-			{
-				System.Diagnostics.Debug.WriteLine(e);
-			}
-		}
+        public async Task BuscaLigaCache()
+        {
+            try
+            {
+                LigaPageCache _ligaPageCache = await ServiceRepository.CartolaService.GetLigaPageCache();
+                if (_ligaPageCache != null)
+                {
+                    controllerLigas.ExibeLigaPageCache(_ligaPageCache);
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+        }
 
         /// <summary>
         /// Ao realizar alguma busca na API da Globo, caso ela retorne StatusCode = Unauthorized, devemos

@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="AkavacheSqliteLinkerOverride.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="Business\Interfaces\IControllerBuscaTime.cs" />
     <Compile Include="Business\Interfaces\IControllerLigas.cs" />
     <Compile Include="Business\Interfaces\IControllerUsuariosLiga.cs" />
     <Compile Include="Custom\CartolaNavigationPage.cs" />
@@ -55,10 +56,14 @@
     <Compile Include="Services\IRequestService.cs" />
     <Compile Include="Services\ServiceRepository.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\BuscaTimeViewModel.cs" />
     <Compile Include="ViewModel\LigasViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\TimesViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="Views\BuscaTimePage.xaml.cs">
+      <DependentUpon>BuscaTimePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LigasPage.xaml.cs">
       <DependentUpon>LigasPage.xaml</DependentUpon>
     </Compile>
@@ -187,6 +192,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MeuTimePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\BuscaTimePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

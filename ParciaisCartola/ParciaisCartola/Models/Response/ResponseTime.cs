@@ -9,5 +9,7 @@ namespace ParciaisCartola.Models.Response
     public class ResponseTime
     {
         public List<Atleta> atletas { get; set; }
+
+		public Time time { get; set; }			
     }
 }
