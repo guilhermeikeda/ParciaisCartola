@@ -13,43 +13,7 @@ namespace ParciaisCartola.ViewModel
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            SimpleIoc.Default.Register<LigasViewModel>();
-            SimpleIoc.Default.Register<TimesViewModel>();
-			SimpleIoc.Default.Register<AtletasViewModel>();
-			SimpleIoc.Default.Register<MenuViewModel>();
             SimpleIoc.Default.Register<BuscaTimeViewModel>();
-        }
-
-		public MenuViewModel Menu
-		{
-			get
-			{
-				return ServiceLocator.Current.GetInstance<MenuViewModel>();
-			}
-		}
-
-		public AtletasViewModel Atletas
-		{
-			get
-			{
-				return ServiceLocator.Current.GetInstance<AtletasViewModel>();
-			}
-		}
-
-        public LigasViewModel Ligas
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<LigasViewModel>();
-            }
-        }
-
-        public TimesViewModel Times
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<TimesViewModel>();
-            }
         }
 
         public BuscaTimeViewModel BuscaTime

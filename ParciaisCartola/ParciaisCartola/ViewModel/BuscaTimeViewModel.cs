@@ -1,6 +1,7 @@
 ﻿using ParciaisCartola.Business;
 using ParciaisCartola.Business.Interfaces;
 using ParciaisCartola.Models;
+using ParciaisCartola.Services;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -12,13 +13,14 @@ namespace ParciaisCartola.ViewModel
     {
         private ObservableCollection<Time> _TimesList;
         private string _NomeTime;
-
         private BusinessCartola cartolaBO;
+        private AzureClient _client;
 
         public BuscaTimeViewModel()
         {
             TimesList = new ObservableCollection<Time>();
             cartolaBO = new BusinessCartola(this);
+            _client = new AzureClient();
         }
 
         public void ExibeListaTimes(List<Time> times)
@@ -43,8 +45,14 @@ namespace ParciaisCartola.ViewModel
         {
             if (TimesList.Count == 0)
             {
-                Task.Run(async () => await cartolaBO.BuscaTimesPageCache());
+                //Task.Run(async () => await cartolaBO.BuscaTimesPageCache());
+                Task.Run(async () => await GetTimesAzure());
             }
+        }
+
+        private async Task GetTimesAzure()
+        {
+            var x = await _client.GetTimes();
         }
 
         #region Objects

@@ -1,27 +1,28 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+
 
 namespace ParciaisCartola.Models
 {
     public class Time
     {
-        [JsonProperty(PropertyName = "nome")]
+        [Version]
+        public string Version { get; set; }
+
+        [JsonProperty(PropertyName = "Nome")]
         public string Nome { get; set; }
 
         [JsonProperty(PropertyName = "slug")]
         public string Slug { get; set; }
 
-        [JsonProperty(PropertyName = "url_escudo_png")]
+        [JsonProperty(PropertyName = "ImagemEscudo")]
         public string Escudo { get; set; }
 
         public UriImageSource EscudoURI { get; set; }
 
-        [JsonProperty(PropertyName = "nome_cartola")]
+        [JsonProperty(PropertyName = "NomeCartola")]
         public string NomeCartola { get; set; }
 
 		[JsonProperty(PropertyName = "foto_perfil")]

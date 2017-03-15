@@ -1,7 +1,6 @@
 ﻿using Xamarin.Forms;
 using ParciaisCartola.ViewModel;
 using ParciaisCartola.Views;
-using ParciaisCartola.Custom;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,7 +22,7 @@ namespace ParciaisCartola
         {
             
             _locator = new ViewModelLocator();
-            MainPage = new RootPage();
+            MainPage = new BuscaTimePage();
         }
 
         protected override void OnStart()
