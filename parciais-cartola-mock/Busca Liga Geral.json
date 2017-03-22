@@ -1,0 +1,402 @@
+[
+  {
+    "liga_id": 337410,
+    "nome": "Brasileirosecia",
+    "descricao": "A liga genuinamente brasileira",
+    "slug": "brasileirosecia",
+    "imagem": "https://s2.glbimg.com/Ke8031HOGu9GBkpMOj0BL7x_tzU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/svg/trofeu/00020160514014430",
+    "quantidade_times": 0,
+    "mata_mata": true,
+    "tipo": "Mata Mata"
+  },
+  {
+    "liga_id": 201753,
+    "nome": "Brasilerao2016",
+    "descricao": "Que vença o melhor",
+    "slug": "brasilerao2016",
+    "imagem": "https://s2.glbimg.com/_PCsNYq73UNon9JOzFrhnQkSpqI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/svg/trofeu/0095897520160514134319",
+    "quantidade_times": 0,
+    "mata_mata": true,
+    "tipo": "Mata Mata"
+  },
+  {
+    "liga_id": 522350,
+    "nome": "Brasileirãoãoão",
+    "descricao": "Vamos ver quem manja das escalação e pah...",
+    "slug": "brasileiraoaoao",
+    "imagem": "https://s2.glbimg.com/p9iyydL0Ua54N8r0eEAVkjE3_1w=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/50/34/12/0052235020160726163412",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 324558,
+    "nome": "Brasileiroba",
+    "descricao": "só lazer",
+    "slug": "brasileiroba",
+    "imagem": "https://s2.glbimg.com/NpOB-q9OBMRc2EZ9s5FCAjEvYeY=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/58/35/41/0032455820160726163541",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 85798,
+    "nome": "BRASILFUT",
+    "descricao": "Boleiros da Brasilprev...",
+    "slug": "brasilfut",
+    "imagem": "https://s2.glbimg.com/hqPQNBOlM7mJrBEWrJ8XiMKDpHc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/98/33/46/008579820160726163346",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 494257,
+    "nome": "Brasileirinfos",
+    "descricao": "só caloteiros",
+    "slug": "brasileirinfos",
+    "imagem": "https://s2.glbimg.com/0fyR7YsRUh-oZweX6cOLT6r1Wc8=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/57/35/36/0049425720160726163536",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 273056,
+    "nome": "Brasileirãooo2016",
+    "descricao": "Disputas sobre os cracks",
+    "slug": "brasileiraooo2016",
+    "imagem": "https://s2.glbimg.com/m3-oMHVNBerYCmNoRvQnwHG-ZlU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/56/40/59/0027305620160726164059",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1144253,
+    "nome": "Brasileimantas",
+    "descricao": "Uma péssima rodada para você!",
+    "slug": "brasileimantas",
+    "imagem": "https://s2.glbimg.com/8OKJUzJUfHAPJk-MDAYrzB_nA-k=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/trofeu/53/41/41/00114425320160726164141",
+    "quantidade_times": 0,
+    "mata_mata": true,
+    "tipo": "Mata Mata"
+  },
+  {
+    "liga_id": 18682,
+    "nome": "Brasileiro",
+    "descricao": "Liga Brasileira",
+    "slug": "brasileiro",
+    "imagem": "https://s2.glbimg.com/ZwljuWeCXx-MpEAuSMLHtA7ZAK4=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/82/25/27/001868220160726162527",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 234831,
+    "nome": "BrasileirETE",
+    "descricao": "Que vença o melhor!",
+    "slug": "brasileirete",
+    "imagem": "https://s2.glbimg.com/zwJuYTdfJeg5gsyIcdvbxP9dTwc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/31/33/32/0023483120160726163332",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Moderada"
+  },
+  {
+    "liga_id": 4437,
+    "nome": "Brasileirão",
+    "descricao": "Que vença o melhor",
+    "slug": "brasileirao",
+    "imagem": "https://s2.glbimg.com/w0Z0POs0jNTf4EDW5ax60iKn8Pg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/37/34/41/00443720160726163441",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 559746,
+    "nome": "brasileufa",
+    "descricao": "\nponto corrido\n\n\n\n\n\n",
+    "slug": "brasileufa",
+    "imagem": "https://s2.glbimg.com/uBGYUIaeLrBnp9fmrWcef5b6tZU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/46/41/08/0055974620160726164108",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 630304,
+    "nome": "BrasileiraoMalucoFC",
+    "descricao": ";",
+    "slug": "brasileiraomalucofc",
+    "imagem": "https://s2.glbimg.com/JfKhwTIifZfCna2gcyjcY0DciiU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/04/40/45/0063030420160726164045",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 469054,
+    "nome": "BRASILEIROBASSS",
+    "descricao": "Pra cima deles.",
+    "slug": "brasileirobasss",
+    "imagem": "https://s2.glbimg.com/NwDo7Ao9abAEmYiuUlrytxWEi-I=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/54/40/43/0046905420160726164043",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 47014,
+    "nome": "Brasileirasso2016",
+    "descricao": "Nossa liga voltou!!!!",
+    "slug": "brasileirasso2016",
+    "imagem": "https://s2.glbimg.com/EYJHBTIgY8Lwe1ptaef5_h8HhA4=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/14/40/50/004701420160726164050",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 807531,
+    "nome": "brasileirãooooooo",
+    "descricao": "é nois!\n",
+    "slug": "brasileiraooooooo",
+    "imagem": "https://s2.glbimg.com/hE8zikO6X5cp4oYszPbWiYgrCKI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/31/05/15/0080753120160726170515",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 608087,
+    "nome": "BrasileserieA",
+    "descricao": "uma liga de diversão",
+    "slug": "brasileseriea",
+    "imagem": "https://s2.glbimg.com/MEX48V4TqDrkkEaJE6qfobxjeFg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/87/05/11/0060808720160726170511",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 627456,
+    "nome": "BRASILEIRAOFC12",
+    "descricao": "Essa luta vai ser feita para os cartoleiros iniciantes para ir evoluindo!",
+    "slug": "brasileiraofc12",
+    "imagem": "https://s2.glbimg.com/j-UogUfx4Y8qcoFx_E63D3vkDoI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/56/03/57/0062745620160726170357",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1210013,
+    "nome": "brasileiraodosloko",
+    "descricao": "tudo sobre time ",
+    "slug": "brasileiraodosloko",
+    "imagem": "https://s2.glbimg.com/_gzFxAy5jsjncw03TQduj_w7XKY=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/13/05/25/00121001320160726180525",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1208302,
+    "nome": "brasileirao6789964334455555",
+    "descricao": "hhhhhh\n",
+    "slug": "brasileirao6789964334455555",
+    "imagem": "https://s2.glbimg.com/fCkcbvGohEoYln28jrOxFO9nvzA=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/02/05/20/00120830220160726180520",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 602546,
+    "nome": "Brasileirãuum",
+    "descricao": "LIGA ONDE MEUS AMIGOS IRAM PARTICIPAR !8",
+    "slug": "brasileirauum",
+    "imagem": "https://s2.glbimg.com/oki5BECDUCYHly4TS2CObYuvX90=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/46/04/40/0060254620160726170440",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 577696,
+    "nome": "Brasileirinhospiumhi",
+    "descricao": "liga nova criada mais para amigos se divertirem",
+    "slug": "brasileirinhospiumhi",
+    "imagem": "https://s2.glbimg.com/MxFOzw8VU7XfnjONv-egh9Nifeo=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/96/04/40/0057769620160726170440",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 664079,
+    "nome": "#Brasileirão00história",
+    "descricao": "É o Xxobi neguim.",
+    "slug": "brasileirao00historia",
+    "imagem": "https://s2.glbimg.com/SbDJoje9GAdCwHWbcF-Ovz7iUBI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/79/04/42/0066407920160726170442",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 582742,
+    "nome": "Brasileiraaaaao",
+    "descricao": "Liga dos times ",
+    "slug": "brasileiraaaaao",
+    "imagem": "https://s2.glbimg.com/i-_vCZIAbHpRp5htUwImTz_EkK8=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/42/04/45/0058274220160726170445",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 638096,
+    "nome": "Brasileimito",
+    "descricao": "Liga mais bolada do Cartola",
+    "slug": "brasileimito",
+    "imagem": "https://s2.glbimg.com/OdS17Hu_Nr08uUwqedz-mnkYfVg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/96/04/47/0063809620160726170447",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 536592,
+    "nome": "Brasileirão90",
+    "descricao": "Show de futebol",
+    "slug": "brasileirao90",
+    "imagem": "https://s2.glbimg.com/db6n48VIo9dND1K9ziAzesqdViU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/92/03/43/0053659220160726170343",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1289083,
+    "nome": "brasileirassos",
+    "descricao": "Show de bola",
+    "slug": "brasileirassos",
+    "imagem": "https://s2.glbimg.com/DyKG4D87s8luWbZquzD4cffF_1M=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/83/03/43/00128908320160726170343",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 526002,
+    "nome": "brasilpet",
+    "descricao": "showbol a kiga numero 1 do futebol\n",
+    "slug": "brasilpet",
+    "imagem": "https://s2.glbimg.com/XOv8kR5-77419y-dmBPpGThvDY0=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/02/03/44/0052600220160726170344",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1114491,
+    "nome": "BRASILIANS.FUT",
+    "descricao": "boraa ve quem ganha sa bagaça kkk",
+    "slug": "brasilians-fut",
+    "imagem": "https://s2.glbimg.com/wVu04W46XzgGd24kcp3TQJBzI0o=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/91/01/48/00111449120160726180148",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 698202,
+    "nome": "BrasileirinhosFC",
+    "descricao": "...",
+    "slug": "brasileirinhosfc",
+    "imagem": "https://s2.glbimg.com/TuczZkrxgkFohnjzi3s7zq-SFxk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/02/03/00/0069820220160726170300",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 698835,
+    "nome": "Brasil13",
+    "descricao": "Jogar Prá Vencer",
+    "slug": "brasil13",
+    "imagem": "https://s2.glbimg.com/xfO2nJr7WZRzz__ocfHjoXXF2kE=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/35/04/08/0069883520160726170408",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1287588,
+    "nome": "brasiliria",
+    "descricao": "campeão ",
+    "slug": "brasiliria",
+    "imagem": "https://s2.glbimg.com/rBte43cnHESrX3KqjtARwHzi6Oc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/88/08/54/00128758820160726180854",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Moderada"
+  },
+  {
+    "liga_id": 1287776,
+    "nome": "BRASILEIRAO_CTFC_CAJU",
+    "descricao": "É LEGAL",
+    "slug": "brasileirao-ctfc-caju",
+    "imagem": "https://s2.glbimg.com/qUzbR1_YvlpOaoI8mU2Ud_OVt0Y=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/76/08/54/00128777620160726180854",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 1171701,
+    "nome": "BrasileiraoFutebol",
+    "descricao": "\nHalloween\nhen",
+    "slug": "brasileiraofutebol",
+    "imagem": "https://s2.glbimg.com/C9xEGfYxh33S3PvZvzdj6KAJT5E=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/01/03/56/00117170120160726180356",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1173277,
+    "nome": "brasileirao18374",
+    "descricao": "Lol",
+    "slug": "brasileirao18374",
+    "imagem": "https://s2.glbimg.com/x3QlCbcRJPOlhFULBb0i2fNudZ4=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/77/03/59/00117327720160726180359",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 496158,
+    "nome": "brasileirinhoooo",
+    "descricao": "...",
+    "slug": "brasileirinhoooo",
+    "imagem": "https://s2.glbimg.com/QQiuCdWh6KPu05gd_76_MZHktzk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/58/02/46/0049615820160726170246",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 747699,
+    "nome": "brasileiroLigaG",
+    "descricao": "liga para amigos ",
+    "slug": "brasileiroligag",
+    "imagem": "https://s2.glbimg.com/BP_yqd1uCI25Ws3lM4KPIn9z-4o=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/99/04/27/0074769920160726170427",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  },
+  {
+    "liga_id": 1016912,
+    "nome": "Brasileirao_Santos",
+    "descricao": "Mais cotada das liga",
+    "slug": "brasileirao-santos",
+    "imagem": "https://s2.glbimg.com/QdC1nhBJFMUaZoLUCe36UDDaBuk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/12/04/34/00101691220160726170434",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1139466,
+    "nome": "brasilerisimo",
+    "descricao": "liga entre mata mata",
+    "slug": "brasilerisimo",
+    "imagem": "https://s2.glbimg.com/Hrf_WvSXXXoWwK6zF3ZBrdIz2Vo=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/66/02/45/00113946620160726180245",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Aberta"
+  },
+  {
+    "liga_id": 1214114,
+    "nome": "Brasileirissimos2.0",
+    "descricao": "lega dos mais pika",
+    "slug": "brasileirissimos2-0",
+    "imagem": "https://s2.glbimg.com/74nj3g2dLqO8KCACVJ3xT20_4H0=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/14/05/32/00121411420160726180532",
+    "quantidade_times": 0,
+    "mata_mata": false,
+    "tipo": "Fechada"
+  }
+]

@@ -1,0 +1,835 @@
+{
+  "atletas": [
+    {
+      "nome": "Jean Raphael Vanderlei Moreira",
+      "apelido": "Jean",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/01/35cbb038a295b3d40644676a8319a4fe_FORMATO.png",
+      "atleta_id": 62047,
+      "rodada_id": 36,
+      "clube_id": 275,
+      "posicao_id": 4,
+      "status_id": 7,
+      "pontos_num": 0,
+      "preco_num": 10.78,
+      "variacao_num": 0.2,
+      "media_num": 3.17,
+      "jogos_num": 33,
+      "partida": {
+        "clube_casa_id": 275,
+        "clube_casa_posicao": 1,
+        "clube_visitante_id": 315,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 9,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Arena Palmeiras",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 0,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Caíque Luiz Santos da Purificação",
+      "apelido": "Caíque",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/01/c7b717acd560b03be08e7af47aaa0cf9_FORMATO.png",
+      "atleta_id": 92207,
+      "rodada_id": 36,
+      "clube_id": 287,
+      "posicao_id": 1,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 2.28,
+      "variacao_num": 0,
+      "media_num": 2.78,
+      "jogos_num": 8,
+      "partida": {
+        "clube_casa_id": 294,
+        "clube_casa_posicao": 14,
+        "clube_visitante_id": 287,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 16,
+        "partida_data": "2016-11-28 20:00:00",
+        "local": "Couto Pereira",
+        "valida": true,
+        "placar_oficial_mandante": null,
+        "placar_oficial_visitante": null,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Edílson Mendes Guimarães",
+      "apelido": "Edílson",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/06/06/fff1e2f2c5b5ab7d1955d4863ec54bf3_FORMATO.png",
+      "atleta_id": 38523,
+      "rodada_id": 36,
+      "clube_id": 284,
+      "posicao_id": 2,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 10.32,
+      "variacao_num": 0,
+      "media_num": 3.85,
+      "jogos_num": 25,
+      "partida": {
+        "clube_casa_id": 344,
+        "clube_casa_posicao": 19,
+        "clube_visitante_id": 284,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 8,
+        "partida_data": "2016-11-27 19:30:00",
+        "local": "Arruda",
+        "valida": true,
+        "placar_oficial_mandante": 5,
+        "placar_oficial_visitante": 1,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Christian Alberto Cueva Bravo",
+      "apelido": "Cueva",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/06/28/a68882f174b592bf4e78dbc9818a4465_FORMATO.jpeg",
+      "atleta_id": 82411,
+      "rodada_id": 36,
+      "clube_id": 276,
+      "posicao_id": 5,
+      "status_id": 7,
+      "pontos_num": 0,
+      "preco_num": 9.84,
+      "variacao_num": -0.29,
+      "media_num": 5.48,
+      "jogos_num": 22,
+      "partida": {
+        "clube_casa_id": 282,
+        "clube_casa_posicao": 4,
+        "clube_visitante_id": 276,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 11,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Independência",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 2,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Maicon Pereira Roque",
+      "apelido": "Maicon",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/01/f3000bd2b412a315dad8796d7080a492_FORMATO.png",
+      "atleta_id": 71227,
+      "rodada_id": 36,
+      "clube_id": 276,
+      "posicao_id": 3,
+      "status_id": 7,
+      "pontos_num": 0,
+      "preco_num": 8.65,
+      "variacao_num": -0.18,
+      "media_num": 2.83,
+      "jogos_num": 30,
+      "partida": {
+        "clube_casa_id": 282,
+        "clube_casa_posicao": 4,
+        "clube_visitante_id": 276,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 11,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Independência",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 2,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Lyanco Evangelista Silveira Neves Vojnovic",
+      "apelido": "Lyanco",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/01/5ff95e8dd4eef153e5d1bce5bb2a1604_FORMATO.png",
+      "atleta_id": 92087,
+      "rodada_id": 36,
+      "clube_id": 276,
+      "posicao_id": 3,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 6.12,
+      "variacao_num": 0,
+      "media_num": 1.16,
+      "jogos_num": 12,
+      "partida": {
+        "clube_casa_id": 282,
+        "clube_casa_posicao": 4,
+        "clube_visitante_id": 276,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 11,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Independência",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 2,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Juan Ramón Cazares Sevillano",
+      "apelido": "Cazares",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/09/9cc66ac9c0e3b1aa96f2a58610743699_FORMATO.png",
+      "atleta_id": 81682,
+      "rodada_id": 36,
+      "clube_id": 282,
+      "posicao_id": 4,
+      "status_id": 3,
+      "pontos_num": 0,
+      "preco_num": 10.9,
+      "variacao_num": -1,
+      "media_num": 3.76,
+      "jogos_num": 17,
+      "partida": {
+        "clube_casa_id": 282,
+        "clube_casa_posicao": 4,
+        "clube_visitante_id": 276,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 11,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Independência",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 2,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Gabriel Augusto Xavier",
+      "apelido": "Gabriel Xavier",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/01/0b59c50becbc8d730cad413e46f903e6_FORMATO.png",
+      "atleta_id": 85040,
+      "rodada_id": 36,
+      "clube_id": 292,
+      "posicao_id": 4,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 7.67,
+      "variacao_num": 1.04,
+      "media_num": 2.65,
+      "jogos_num": 27,
+      "partida": {
+        "clube_casa_id": 327,
+        "clube_casa_posicao": 20,
+        "clube_visitante_id": 292,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 15,
+        "partida_data": "2016-11-26 20:00:00",
+        "local": "Independência",
+        "valida": true,
+        "placar_oficial_mandante": 2,
+        "placar_oficial_visitante": 2,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Luiz Carlos Saroli",
+      "apelido": "Caio Júnior",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/07/06/20fe77af65a1ff75e00576f6ff3ed454_FORMATO.png",
+      "atleta_id": 41946,
+      "rodada_id": 36,
+      "clube_id": 315,
+      "posicao_id": 6,
+      "status_id": 7,
+      "pontos_num": 0,
+      "preco_num": 10.62,
+      "variacao_num": 0.04,
+      "media_num": 3.45,
+      "jogos_num": 24,
+      "partida": {
+        "clube_casa_id": 275,
+        "clube_casa_posicao": 1,
+        "clube_visitante_id": 315,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 9,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Arena Palmeiras",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 0,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Henrique Pacheco de Lima",
+      "apelido": "Henrique",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/04/29/3ee91a269e77c0defb08f1fee38c0aff_FORMATO.png",
+      "atleta_id": 37694,
+      "rodada_id": 36,
+      "clube_id": 283,
+      "posicao_id": 4,
+      "status_id": 3,
+      "pontos_num": 0,
+      "preco_num": 10.45,
+      "variacao_num": -1.24,
+      "media_num": 4.16,
+      "jogos_num": 30,
+      "partida": {
+        "clube_casa_id": 285,
+        "clube_casa_posicao": 17,
+        "clube_visitante_id": 283,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 13,
+        "partida_data": "2016-11-27 17:00:00",
+        "local": "Beira-Rio",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 0,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "Everton Sousa Soares",
+      "apelido": "Everton",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/04/30/58142c7fcee7f7bbfc6d8a343b2a103f_FORMATO.png",
+      "atleta_id": 86757,
+      "rodada_id": 36,
+      "clube_id": 284,
+      "posicao_id": 5,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 6.24,
+      "variacao_num": -0.46,
+      "media_num": 2.7,
+      "jogos_num": 26,
+      "partida": {
+        "clube_casa_id": 344,
+        "clube_casa_posicao": 19,
+        "clube_visitante_id": 284,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 8,
+        "partida_data": "2016-11-27 19:30:00",
+        "local": "Arruda",
+        "valida": true,
+        "placar_oficial_mandante": 5,
+        "placar_oficial_visitante": 1,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    },
+    {
+      "nome": "William Matheus da Silva",
+      "apelido": "William Matheus",
+      "foto": "https://s.glbimg.com/es/sde/f/2016/05/30/c305f57716ad3736b7ff1a84ee695ab2_FORMATO.png",
+      "atleta_id": 62130,
+      "rodada_id": 36,
+      "clube_id": 266,
+      "posicao_id": 2,
+      "status_id": 6,
+      "pontos_num": 0,
+      "preco_num": 6.38,
+      "variacao_num": 0,
+      "media_num": 2.92,
+      "jogos_num": 18,
+      "partida": {
+        "clube_casa_id": 316,
+        "clube_casa_posicao": 18,
+        "clube_visitante_id": 266,
+        "aproveitamento_mandante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "aproveitamento_visitante": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "clube_visitante_posicao": 12,
+        "partida_data": "2016-11-27 19:30:00",
+        "local": "Orlando Scarpelli",
+        "valida": true,
+        "placar_oficial_mandante": 1,
+        "placar_oficial_visitante": 0,
+        "url_confronto": "",
+        "url_transmissao": ""
+      },
+      "scout": null
+    }
+  ],
+  "clubes": {
+    "262": {
+      "id": 262,
+      "nome": "Flamengo",
+      "abreviacao": "FLA",
+      "posicao": 3,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/flamengo_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/flamengo_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/flamengo_30x30.png"
+      }
+    },
+    "263": {
+      "id": 263,
+      "nome": "Botafogo",
+      "abreviacao": "BOT",
+      "posicao": 6,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/botafogo_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/botafogo_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/botafogo_30x30.png"
+      }
+    },
+    "264": {
+      "id": 264,
+      "nome": "Corinthians",
+      "abreviacao": "COR",
+      "posicao": 7,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/corinthians_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/corinthians_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/corinthians_30x30.png"
+      }
+    },
+    "266": {
+      "id": 266,
+      "nome": "Fluminense",
+      "abreviacao": "FLU",
+      "posicao": 11,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/fluminense_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/fluminense_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/Fluminense-escudo.png"
+      }
+    },
+    "275": {
+      "id": 275,
+      "nome": "Palmeiras",
+      "abreviacao": "PAL",
+      "posicao": 1,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/palmeiras_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/palmeiras_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/palmeiras_30x30.png"
+      }
+    },
+    "276": {
+      "id": 276,
+      "nome": "São Paulo",
+      "abreviacao": "SAO",
+      "posicao": 13,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/sao_paulo_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/sao_paulo_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/sao_paulo_30x30.png"
+      }
+    },
+    "277": {
+      "id": 277,
+      "nome": "Santos",
+      "abreviacao": "SAN",
+      "posicao": 2,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/santos_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/santos_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/santos_30x30.png"
+      }
+    },
+    "282": {
+      "id": 282,
+      "nome": "Atlético-MG",
+      "abreviacao": "ATL",
+      "posicao": 4,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/atletico_mg_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/atletico_mg_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/atletico_mg_30x30.png"
+      }
+    },
+    "283": {
+      "id": 283,
+      "nome": "Cruzeiro",
+      "abreviacao": "CRU",
+      "posicao": 12,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2015/04/29/cruzeiro_65.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2015/04/29/cruzeiro_45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2015/04/29/cruzeiro_30.png"
+      }
+    },
+    "284": {
+      "id": 284,
+      "nome": "Grêmio",
+      "abreviacao": "GRE",
+      "posicao": 8,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/gremio_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/gremio_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/gremio_30x30.png"
+      }
+    },
+    "285": {
+      "id": 285,
+      "nome": "Internacional",
+      "abreviacao": "INT",
+      "posicao": 17,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2016/05/03/inter65.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2016/05/03/inter45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2016/05/03/inter30.png"
+      }
+    },
+    "287": {
+      "id": 287,
+      "nome": "Vitória",
+      "abreviacao": "VIT",
+      "posicao": 16,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/vitoria_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/vitoria_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/vitoria_30x30.png"
+      }
+    },
+    "292": {
+      "id": 292,
+      "nome": "Sport",
+      "abreviacao": "SPO",
+      "posicao": 15,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/sport65.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/sport45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2015/07/21/sport30.png"
+      }
+    },
+    "293": {
+      "id": 293,
+      "nome": "Atlético-PR",
+      "abreviacao": "ATL",
+      "posicao": 5,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2015/06/24/atletico-pr_2015_65.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2015/06/24/atletico-pr_2015_45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2015/06/24/atletico-pr_2015_30.png"
+      }
+    },
+    "294": {
+      "id": 294,
+      "nome": "Coritiba",
+      "abreviacao": "COR",
+      "posicao": 14,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/coritiba_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/coritiba_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/coritiba_30x30.png"
+      }
+    },
+    "303": {
+      "id": 303,
+      "nome": "Ponte Preta",
+      "abreviacao": "PON",
+      "posicao": 10,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/ponte_preta_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/ponte_preta_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/ponte_preta_30x30.png"
+      }
+    },
+    "315": {
+      "id": 315,
+      "nome": "Chapecoense",
+      "abreviacao": "CHA",
+      "posicao": 9,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2015/08/03/Escudo-Chape-165.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2015/08/03/Escudo-Chape-145.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2015/08/03/Escudo-Chape-130.png"
+      }
+    },
+    "316": {
+      "id": 316,
+      "nome": "Figueirense",
+      "abreviacao": "FIG",
+      "posicao": 18,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/figueirense_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/figueirense_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2013/12/16/figueirense_30x30.png"
+      }
+    },
+    "327": {
+      "id": 327,
+      "nome": "América-MG",
+      "abreviacao": "AME",
+      "posicao": 20,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/equipes/2016/06/08/America-MG_65_YAXGu0v.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/equipes/2016/06/08/America-MG_45_10JJfa5.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/equipes/2016/06/08/America-MG_30_Dp4rFYO.png"
+      }
+    },
+    "344": {
+      "id": 344,
+      "nome": "Santa Cruz",
+      "abreviacao": "STC",
+      "posicao": 19,
+      "escudos": {
+        "60x60": "https://s.glbimg.com/es/sde/f/organizacoes/2014/04/14/santa_cruz_60x60.png",
+        "45x45": "https://s.glbimg.com/es/sde/f/organizacoes/2014/04/14/santa_cruz_45x45.png",
+        "30x30": "https://s.glbimg.com/es/sde/f/organizacoes/2014/04/14/santa_cruz_30x30.png"
+      }
+    }
+  },
+  "posicoes": {
+    "1": {
+      "id": 1,
+      "nome": "Goleiro",
+      "abreviacao": "gol"
+    },
+    "2": {
+      "id": 2,
+      "nome": "Lateral",
+      "abreviacao": "lat"
+    },
+    "3": {
+      "id": 3,
+      "nome": "Zagueiro",
+      "abreviacao": "zag"
+    },
+    "4": {
+      "id": 4,
+      "nome": "Meia",
+      "abreviacao": "mei"
+    },
+    "5": {
+      "id": 5,
+      "nome": "Atacante",
+      "abreviacao": "ata"
+    },
+    "6": {
+      "id": 6,
+      "nome": "Técnico",
+      "abreviacao": "tec"
+    }
+  },
+  "status": {
+    "2": {
+      "id": 2,
+      "nome": "Dúvida"
+    },
+    "3": {
+      "id": 3,
+      "nome": "Suspenso"
+    },
+    "5": {
+      "id": 5,
+      "nome": "Contundido"
+    },
+    "6": {
+      "id": 6,
+      "nome": "Nulo"
+    },
+    "7": {
+      "id": 7,
+      "nome": "Provável"
+    }
+  },
+  "time": {
+    "time_id": 3727132,
+    "clube_id": 276,
+    "esquema_id": 4,
+    "cadun_id": 57174981,
+    "facebook_id": 100000214410036,
+    "foto_perfil": "https://graph.facebook.com/v2.2/100000214410036/picture?width=100&height=100",
+    "nome": "Keda FC",
+    "nome_cartola": "Fernando Soto",
+    "slug": "keda-fc",
+    "tipo_escudo": 1,
+    "cor_fundo_escudo": "000000",
+    "cor_borda_escudo": "bf1d17",
+    "cor_primaria_estampa_escudo": "a64b00",
+    "cor_secundaria_estampa_escudo": "997a00",
+    "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_26/escudo/81/49/29/005717498120160827024929",
+    "url_escudo_png": "https://s2.glbimg.com/TE8Ow2ATnnUDioZwf4fjj8qux4w=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_26/escudo/81/49/29/005717498120160827024929",
+    "url_camisa_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_26/camisa/81/49/29/005717498120160827024929",
+    "url_camisa_png": "https://s2.glbimg.com/q_rFHhZFFE7GSJsLdVlhNQgHa7c=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_26/camisa/81/49/29/005717498120160827024929",
+    "url_escudo_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+    "url_camisa_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/camisa.png",
+    "tipo_estampa_escudo": 1,
+    "tipo_adorno": 1,
+    "tipo_camisa": 1,
+    "tipo_estampa_camisa": 1,
+    "cor_camisa": "ffffff",
+    "cor_primaria_estampa_camisa": "a64b00",
+    "cor_secundaria_estampa_camisa": "997a00",
+    "rodada_time_id": 14,
+    "assinante": false,
+    "cadastro_completo": true,
+    "patrocinador1_id": 63,
+    "patrocinador2_id": 62
+  },
+  "patrimonio": 0,
+  "esquema_id": 4,
+  "pontos": 6.079986572265625,
+  "valor_time": 0,
+  "rodada_atual": 37
+}

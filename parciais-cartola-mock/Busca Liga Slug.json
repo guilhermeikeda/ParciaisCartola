@@ -1,0 +1,548 @@
+{
+  "liga": {
+    "liga_id": 46474,
+    "time_dono_id": 259901,
+    "clube_id": null,
+    "nome": "Opus Software",
+    "descricao": "Funcionários e ex funcionários",
+    "slug": "opus-software",
+    "tipo": "M",
+    "tipo_flamula": 1,
+    "tipo_estampa_flamula": 1,
+    "tipo_adorno_flamula": 1,
+    "cor_primaria_estampa_flamula": "808080",
+    "cor_secundaria_estampa_flamula": "ffffff",
+    "cor_borda_flamula": "000000",
+    "cor_fundo_flamula": "ffffff",
+    "url_flamula_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/74/24/58/004647420160726162458",
+    "url_flamula_png": "https://s2.glbimg.com/sueUiRx-sKKDaErrOGROXs5PaIM=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_1/flamula/74/24/58/004647420160726162458",
+    "tipo_trofeu": null,
+    "cor_trofeu": null,
+    "url_trofeu_svg": null,
+    "url_trofeu_png": null,
+    "editorial": false,
+    "patrocinador": false,
+    "mata_mata": false,
+    "inicio_rodada": null,
+    "fim_rodada": null,
+    "quantidade_times": null,
+    "sorteada": false,
+    "mes_ranking_num": null,
+    "mes_variacao_num": null,
+    "camp_ranking_num": null,
+    "camp_variacao_num": null,
+    "imagem": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/flamula.png",
+    "amigos": null,
+    "total_amigos_na_liga": 0,
+    "total_times_liga": 11,
+    "info_editorial": {
+      "cor_nome_liga": "",
+      "img_background": null,
+      "img_marca_patrocinador": null
+    }
+  },
+  "times": [
+    {
+      "url_escudo_png": "https://s2.glbimg.com/JVpM7ziG6N5iOblrMj_lT0sVW1k=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/05/32/11/002801260520160825003211",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/05/32/11/002801260520160825003211",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 25731,
+      "nome": "NoIs QuE VoA SEP",
+      "nome_cartola": "Allan Garcia",
+      "slug": "nois-que-voa-sep",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 217.67,
+      "ranking": {
+        "rodada": 3,
+        "mes": 4,
+        "turno": 2,
+        "campeonato": 1,
+        "patrimonio": 1
+      },
+      "pontos": {
+        "rodada": 68.990234375,
+        "mes": 170.1199951171875,
+        "turno": 851.6900024414062,
+        "campeonato": 1896.93994140625
+      },
+      "variacao": {
+        "mes": -1,
+        "turno": -1,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/CnoICwiXyBy4pI1vU5_ViZic2_s=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 632591,
+      "nome": "IKEDA F.C",
+      "nome_cartola": "Guilherme",
+      "slug": "ikeda-f-c",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 184.76,
+      "ranking": {
+        "rodada": 1,
+        "mes": 3,
+        "turno": 3,
+        "campeonato": 2,
+        "patrimonio": 3
+      },
+      "pontos": {
+        "rodada": 95.5498046875,
+        "mes": 190.0800018310547,
+        "turno": 840.3200073242188,
+        "campeonato": 1853.9200439453125
+      },
+      "variacao": {
+        "mes": 1,
+        "turno": 1,
+        "campeonato": 0,
+        "patrimonio": 1
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/zEM4s4dX4O4XXEQns1s3WiDrYBk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/09/48/03/003672290920160825034803",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/09/48/03/003672290920160825034803",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 259901,
+      "nome": "Albergue Fut. Clube",
+      "nome_cartola": "Murilo",
+      "slug": "albergue-fut-clube",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 188.84,
+      "ranking": {
+        "rodada": 5,
+        "mes": 5,
+        "turno": 5,
+        "campeonato": 3,
+        "patrimonio": 2
+      },
+      "pontos": {
+        "rodada": 58.889892578125,
+        "mes": 126.0999984741211,
+        "turno": 771.530029296875,
+        "campeonato": 1755.6700439453125
+      },
+      "variacao": {
+        "mes": 1,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/4oaTv4f5xGb8zuXX3CwNaVebocw=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/72/50/18/003578237220160826005018",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/72/50/18/003578237220160826005018",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 728867,
+      "nome": "Maine Road FC",
+      "nome_cartola": "Andre L",
+      "slug": "maine-road-fc",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 177.32,
+      "ranking": {
+        "rodada": 4,
+        "mes": 2,
+        "turno": 4,
+        "campeonato": 4,
+        "patrimonio": 4
+      },
+      "pontos": {
+        "rodada": 65.2900390625,
+        "mes": 193.72999572753906,
+        "turno": 832.72998046875,
+        "campeonato": 1748.550048828125
+      },
+      "variacao": {
+        "mes": -1,
+        "turno": -1,
+        "campeonato": 0,
+        "patrimonio": -1
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/ZRyZeDJ4XyUQZxZPLJ3PfQRjDU4=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/93/56/20/002767099320160825015620",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/93/56/20/002767099320160825015620",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 124553,
+      "nome": "Terulipa F.C",
+      "nome_cartola": "Renato Teruel",
+      "slug": "terulipa-f-c",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 157.94,
+      "ranking": {
+        "rodada": 2,
+        "mes": 1,
+        "turno": 1,
+        "campeonato": 5,
+        "patrimonio": 7
+      },
+      "pontos": {
+        "rodada": 94.27001953125,
+        "mes": 208.82000732421875,
+        "turno": 873.77001953125,
+        "campeonato": 1721.4200439453125
+      },
+      "variacao": {
+        "mes": 1,
+        "turno": 1,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/e27lhP3yQ0yMeBfc9HZ6mIuQ-YU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/94/09/23/003604149420160825030923",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/94/09/23/003604149420160825030923",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 213795,
+      "nome": "sccpao",
+      "nome_cartola": "Felipe Barbosa",
+      "slug": "sccpao",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 169.04,
+      "ranking": {
+        "rodada": 6,
+        "mes": 6,
+        "turno": 6,
+        "campeonato": 6,
+        "patrimonio": 5
+      },
+      "pontos": {
+        "rodada": 56.27001953125,
+        "mes": 116.81999969482422,
+        "turno": 682.510009765625,
+        "campeonato": 1630.56005859375
+      },
+      "variacao": {
+        "mes": 1,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 1
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/PGWjH1s8q7wP79c7Kxq8csk3kMg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/99/18/45/004434969920160827011845",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/99/18/45/004434969920160827011845",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 3028970,
+      "nome": "M.Neves F.C.",
+      "nome_cartola": "Murilo Neves",
+      "slug": "m-neves-f-c",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 168.7,
+      "ranking": {
+        "rodada": 11,
+        "mes": 7,
+        "turno": 8,
+        "campeonato": 7,
+        "patrimonio": 6
+      },
+      "pontos": {
+        "rodada": 1.4300003051757812,
+        "mes": 94.37999725341797,
+        "turno": 480.75,
+        "campeonato": 1399.9200439453125
+      },
+      "variacao": {
+        "mes": -2,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": -1
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/Vs_O23i642tVOy4DWKl7jVSmYMI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_27/escudo/17/36/31/006881271720160827033631",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_27/escudo/17/36/31/006881271720160827033631",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 3977477,
+      "nome": "AtleticoPangareFC",
+      "nome_cartola": "Tancredo",
+      "slug": "atleticopangarefc",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 110.26,
+      "ranking": {
+        "rodada": 9,
+        "mes": 8,
+        "turno": 7,
+        "campeonato": 8,
+        "patrimonio": 11
+      },
+      "pontos": {
+        "rodada": 17.0699462890625,
+        "mes": 76.88999938964844,
+        "turno": 566.010009765625,
+        "campeonato": 1334.469970703125
+      },
+      "variacao": {
+        "mes": 0,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/ovytUyzVhvkdUJ-fKcV48yOpBqc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_22/escudo/07/35/04/003674510720160826013504",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_22/escudo/07/35/04/003674510720160826013504",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 1195226,
+      "nome": "RatazanasDePorão F. C.",
+      "nome_cartola": "Rafael",
+      "slug": "ratazanasdeporao-f-c",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 137.68,
+      "ranking": {
+        "rodada": 8,
+        "mes": 9,
+        "turno": 10,
+        "campeonato": 9,
+        "patrimonio": 9
+      },
+      "pontos": {
+        "rodada": 18.8699951171875,
+        "mes": 63.91999816894531,
+        "turno": 393.8999938964844,
+        "campeonato": 1235.77001953125
+      },
+      "variacao": {
+        "mes": 0,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/34wCKY2ZQ1rzG59Xpu_fpvPvjyg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/88/18/13/003784058820160827011813",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/88/18/13/003784058820160827011813",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 3022719,
+      "nome": "Atlético Miolão",
+      "nome_cartola": "Daniel Ramos Miola",
+      "slug": "atletico-miolao",
+      "facebook_id": 846308415384923,
+      "foto_perfil": "https://graph.facebook.com/v2.2/846308415384923/picture?width=100&height=100",
+      "assinante": false,
+      "patrimonio": 123.85,
+      "ranking": {
+        "rodada": 7,
+        "mes": 10,
+        "turno": 9,
+        "campeonato": 10,
+        "patrimonio": 10
+      },
+      "pontos": {
+        "rodada": 31.3699951171875,
+        "mes": 55.81999969482422,
+        "turno": 450.79998779296875,
+        "campeonato": 1071.8199462890625
+      },
+      "variacao": {
+        "mes": 0,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    },
+    {
+      "url_escudo_png": "https://s2.glbimg.com/PLOZXWBl6zr9JM8N5lzStFAwsa0=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/34/47/40/003671163420160825034740",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/34/47/40/003671163420160825034740",
+      "url_placeholder_escudo_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "time_id": 259318,
+      "nome": "testentofc",
+      "nome_cartola": "ivanzb",
+      "slug": "testentofc",
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "assinante": false,
+      "patrimonio": 148.87,
+      "ranking": {
+        "rodada": 10,
+        "mes": 11,
+        "turno": 11,
+        "campeonato": 11,
+        "patrimonio": 8
+      },
+      "pontos": {
+        "rodada": 6.600006103515625,
+        "mes": 23.700000762939453,
+        "turno": 251.3000030517578,
+        "campeonato": 954.8400268554688
+      },
+      "variacao": {
+        "mes": 0,
+        "turno": 0,
+        "campeonato": 0,
+        "patrimonio": 0
+      }
+    }
+  ],
+  "time_usuario": {
+    "url_escudo_png": "https://s2.glbimg.com/CnoICwiXyBy4pI1vU5_ViZic2_s=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+    "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+    "time_id": 632591,
+    "nome": "IKEDA F.C",
+    "nome_cartola": "Guilherme",
+    "slug": "ikeda-f-c",
+    "facebook_id": null,
+    "url_escudo_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+    "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+    "assinante": false,
+    "patrimonio": 184.76,
+    "ranking": {
+      "rodada": 1,
+      "mes": 3,
+      "turno": 3,
+      "campeonato": 2,
+      "patrimonio": 3
+    },
+    "pontos": {
+      "rodada": 95.5498046875,
+      "mes": 190.0800018310547,
+      "turno": 840.3200073242188,
+      "campeonato": 1853.9200439453125
+    },
+    "variacao": {
+      "mes": 1,
+      "turno": 1,
+      "campeonato": 0,
+      "patrimonio": 1
+    }
+  },
+  "amigos": null,
+  "destaques": {
+    "lanterninha": {
+      "time_id": 3028970,
+      "clube_id": 276,
+      "esquema_id": 3,
+      "cadun_id": 44349699,
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "nome": "M.Neves F.C.",
+      "nome_cartola": "Murilo Neves",
+      "slug": "m-neves-f-c",
+      "tipo_escudo": 2,
+      "cor_fundo_escudo": "ffffff",
+      "cor_borda_escudo": "000000",
+      "cor_primaria_estampa_escudo": "bf1d17",
+      "cor_secundaria_estampa_escudo": "000000",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/99/18/45/004434969920160827011845",
+      "url_escudo_png": "https://s2.glbimg.com/PGWjH1s8q7wP79c7Kxq8csk3kMg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/escudo/99/18/45/004434969920160827011845",
+      "url_camisa_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/camisa/99/18/45/004434969920160827011845",
+      "url_camisa_png": "https://s2.glbimg.com/aD5wJgmnMEJgjJZ2kvoBJKyjYkE=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_25/camisa/99/18/45/004434969920160827011845",
+      "url_escudo_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "url_camisa_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/camisa.png",
+      "tipo_estampa_escudo": 3,
+      "tipo_adorno": 2,
+      "tipo_camisa": 1,
+      "tipo_estampa_camisa": 6,
+      "cor_camisa": "ffffff",
+      "cor_primaria_estampa_camisa": "bf1d17",
+      "cor_secundaria_estampa_camisa": "000000",
+      "rodada_time_id": 25,
+      "assinante": false,
+      "cadastro_completo": true,
+      "patrocinador1_id": 62,
+      "patrocinador2_id": 63
+    },
+    "patrimonio": {
+      "time_id": 25731,
+      "clube_id": 275,
+      "esquema_id": 3,
+      "cadun_id": 28012605,
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "nome": "NoIs QuE VoA SEP",
+      "nome_cartola": "Allan Garcia",
+      "slug": "nois-que-voa-sep",
+      "tipo_escudo": 2,
+      "cor_fundo_escudo": "0a6634",
+      "cor_borda_escudo": "bf1d17",
+      "cor_primaria_estampa_escudo": "a64b00",
+      "cor_secundaria_estampa_escudo": "0a6634",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/05/32/11/002801260520160825003211",
+      "url_escudo_png": "https://s2.glbimg.com/JVpM7ziG6N5iOblrMj_lT0sVW1k=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/05/32/11/002801260520160825003211",
+      "url_camisa_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/camisa/05/32/11/002801260520160825003211",
+      "url_camisa_png": "https://s2.glbimg.com/oW2k_9AJNpXqUae-Jaxgcpa9hAU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/camisa/05/32/11/002801260520160825003211",
+      "url_escudo_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "url_camisa_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/camisa.png",
+      "tipo_estampa_escudo": 1,
+      "tipo_adorno": 3,
+      "tipo_camisa": 1,
+      "tipo_estampa_camisa": 1,
+      "cor_camisa": "0a6634",
+      "cor_primaria_estampa_camisa": "a64b00",
+      "cor_secundaria_estampa_camisa": "0a6634",
+      "rodada_time_id": 37,
+      "assinante": false,
+      "cadastro_completo": true,
+      "patrocinador1_id": 62,
+      "patrocinador2_id": 63
+    },
+    "rodada": {
+      "time_id": 632591,
+      "clube_id": 276,
+      "esquema_id": 1,
+      "cadun_id": 35760011,
+      "facebook_id": null,
+      "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+      "nome": "IKEDA F.C",
+      "nome_cartola": "Guilherme",
+      "slug": "ikeda-f-c",
+      "tipo_escudo": 4,
+      "cor_fundo_escudo": "ff7400",
+      "cor_borda_escudo": "cccccc",
+      "cor_primaria_estampa_escudo": "ffab66",
+      "cor_secundaria_estampa_escudo": "ffffff",
+      "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+      "url_escudo_png": "https://s2.glbimg.com/CnoICwiXyBy4pI1vU5_ViZic2_s=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/escudo/11/43/40/003576001120160826004340",
+      "url_camisa_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/camisa/11/43/40/003576001120160826004340",
+      "url_camisa_png": "https://s2.glbimg.com/kDKPXfl0Yl-J1TcKDaqxN85HLyQ=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_21/camisa/11/43/40/003576001120160826004340",
+      "url_escudo_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/escudo.png",
+      "url_camisa_placeholder_png": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/placeholder/camisa.png",
+      "tipo_estampa_escudo": 1,
+      "tipo_adorno": 2,
+      "tipo_camisa": 2,
+      "tipo_estampa_camisa": 2,
+      "cor_camisa": "a64b00",
+      "cor_primaria_estampa_camisa": "000000",
+      "cor_secundaria_estampa_camisa": "063780",
+      "rodada_time_id": 37,
+      "assinante": false,
+      "cadastro_completo": true,
+      "patrocinador1_id": 62,
+      "patrocinador2_id": 63
+    }
+  },
+  "pagina": 1,
+  "membro": true,
+  "time_dono": {
+    "time_id": 259901,
+    "nome": "Albergue Fut. Clube",
+    "nome_cartola": "Murilo",
+    "slug": "albergue-fut-clube",
+    "facebook_id": null,
+    "url_escudo_png": "https://s2.glbimg.com/zEM4s4dX4O4XXEQns1s3WiDrYBk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/09/48/03/003672290920160825034803",
+    "url_escudo_svg": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_20/escudo/09/48/03/003672290920160825034803",
+    "foto_perfil": "https://cartolafc.globo.com/static/img/placeholder_perfil.png",
+    "assinante": false
+  }
+}
