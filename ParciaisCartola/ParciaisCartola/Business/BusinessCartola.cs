@@ -193,7 +193,7 @@ namespace ParciaisCartola.Business
                         pontuacaoParcial += pontuacaoParcial;
                     }
                     else
-                        atleta.PontosParcial = "0,00";
+                        atleta.PontosParcial = "-";
 
                     atleta.FotoURI = new UriImageSource()
                     {
