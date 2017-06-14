@@ -186,14 +186,16 @@ namespace ParciaisCartola.Business
 
                 foreach (var atleta in atletas)
                 {
-                    if (atletasPontuados.atletas.ContainsKey(atleta.ID))
-                    {
-                        var pontuacao = atletasPontuados.atletas[atleta.ID].pontuacao;
-                        atleta.PontosParcial = string.Format("{0:0.00}", pontuacao);
-                        pontuacaoParcial += pontuacaoParcial;
-                    }
-                    else
-                        atleta.PontosParcial = "-";
+					if (atletasPontuados.atletas.ContainsKey(atleta.ID))
+					{
+						var pontuacao = atletasPontuados.atletas[atleta.ID].pontuacao;
+						atleta.PontosParcial = string.Format("{0:0.00}", pontuacao);
+						pontuacaoParcial += pontuacao;
+					}
+					else
+					{
+						atleta.PontosParcial = "-";
+					}
 
                     atleta.FotoURI = new UriImageSource()
                     {
